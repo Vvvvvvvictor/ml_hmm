@@ -19,6 +19,14 @@ echo "num: $2"
 echo "==================================================="
 echo "Shielded parameter is: $S . Added variables is: $A ."
 
+# python scripts/train_bdt_ggH.py --optuna --optuna_metric eval_auc_minus_train_auc --n-calls 60 -r ggH -i /eos/user/q/qguo/vbfhmm/ml/RunIII/skimmed_ntuples_ggH_v1/ --reweight --continue-optuna 0 --optuna-suffix eventWeight_reweight
+
+# python scripts/train_bdt_ggH.py -r ggH -i /eos/user/q/qguo/vbfhmm/ml/RunIII/skimmed_ntuples_ggH_v1/ --reweight --save -o models_reweight --hyperparams_path models/optuna_ggH_eventWeight_reweight
+
+python scripts/apply_bdt.py -r ggH -i /eos/user/q/qguo/vbfhmm/ml/RunIII/skimmed_ntuples_ggH_v1/ -o /eos/user/j/jiehan/root_mumu/outputs_ggH_origWeight -m models_origWeight -c data/training_config_BDT_ggH.json data/apply_config_BDT.json
+
+python scripts/apply_bdt.py -r ggH -i /eos/user/q/qguo/vbfhmm/ml/RunIII/skimmed_ntuples_ggH_v1/ -o /eos/user/j/jiehan/root_mumu/outputs_ggH_reweight -m models_reweight -c data/training_config_BDT_ggH.json data/apply_config_BDT.json
+
 
 # python scripts/train_bdt.py -r two_jet --skopt-plot --params '{"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree", "alpha": 0.5144783323380544, "colsample_bytree": 0.9588358073169332, "gamma": 3.3537213020169725, "max_delta_step": 19.5023193765768, "min_child_weight": 77.0, "subsample": 0.9644739775053346, "eta": 0.01681114970710191, "max_bin": 330.0, "max_depth": 6.0}'
 
@@ -29,8 +37,8 @@ echo "Shielded parameter is: $S . Added variables is: $A ."
 ############################
 # python scripts/train_bdt.py -r zero_jet --save -s $S -a $A
 # python scripts/train_bdt.py -r one_jet --save -s $S -a $A
-python scripts/train_bdt.py -r two_jet --save -s $S -a $A #--hyperparams_path "models/skopt"
-python scripts/train_bdt.py -r VBF --save -s $S -a $A
+# python scripts/train_bdt.py -r two_jet --save -s $S -a $A #--hyperparams_path "models/skopt"
+# python scripts/train_bdt.py -r VBF --save -s $S -a $A
 # python scripts/train_bdt.py -r VH_ttH --save -s $S -a $A
 
 ###########################################
@@ -38,7 +46,7 @@ python scripts/train_bdt.py -r VBF --save -s $S -a $A
 ###########################################
 # python scripts/apply_bdt.py -r zero_jet -s $S -a $A
 # python scripts/apply_bdt.py -r one_jet -s $S -a $A
-python scripts/apply_bdt.py -r two_jet -s $S -a $A
+# python scripts/apply_bdt.py -r two_jet -s $S -a $A
 # python scripts/apply_bdt.py -r VBF -s $S -a $A
 # python scripts/apply_bdt.py -r VH_ttH -s $S -a $A
 
@@ -47,7 +55,7 @@ python scripts/apply_bdt.py -r two_jet -s $S -a $A
 ###########################################################
 # python scripts/categorization_1D.py -r zero_jet -b 4 -s $S -a $A --minN 300
 # python scripts/categorization_1D.py -r one_jet -b 4 -s $S -a $A --minN 300
-python scripts/categorization_1D.py -r two_jet -b 4 -s $S -a $A --minN 10 --floatB
+# python scripts/categorization_1D.py -r two_jet -b 4 -s $S -a $A --minN 10 --floatB
 # python scripts/categorization_1D.py -r two_jet -b 4 --minN 200
 # python scripts/categorization_1D.py -r VH_ttH -b 2 -s $S -a $A --minN 20
 
@@ -55,7 +63,7 @@ python scripts/categorization_1D.py -r two_jet -b 4 -s $S -a $A --minN 10 --floa
 #  Optimizing the BDT boundaries for two-jet
 ##############################################
 # python scripts/categorization_2D.py -r two_jet -b 4 -v 3 --minN 10
-python scripts/categorization_2D_vbf_2j.py -r two_jet -b 4 -v 4 --minN 10
+# python scripts/categorization_2D_vbf_2j.py -r two_jet -b 4 -v 4 --minN 10
 
 # zero_jet one_jet two_jet VH_ttH
 

@@ -38,7 +38,7 @@ def getArgs():
     parser.add_argument('-p', '--params', action='store', type=dict, default=None, help='json string.') #type=json.loads
     parser.add_argument('--hyperparams_path', action='store', default=None, help='path of hyperparameters json') 
     parser.add_argument('--save', action='store_true', help='Save model weights to HDF5 file')
-    parser.add_argument('--corr', action='store_true', default=False, help='Plot corelation between each training variables')
+    parser.add_argument('--corr', action='store_true', default=True, help='Plot corelation between each training variables')
     parser.add_argument('--importance', action='store_true', default=True, help='Plot importance of variables, parameter "gain" is recommanded')
     parser.add_argument('--roc', action='store_true', default=True, help='Plot ROC')
     parser.add_argument('--optuna', action='store_true', default=False, help='Run hyperparameter tuning using optuna')
@@ -86,8 +86,8 @@ class XGBoostHandler(object):
         self._region = region
 
         self._inputFolder = ''
-        self._outputFolder = 'models'
-        self._plotFolder = 'plots'
+        self._outputFolder = args.outputFolder if args.outputFolder else 'models'
+        self._plotFolder = ('plots' + args.outputFolder.split("_")[-1]) if args.outputFolder else 'plots'
         self._chunksize = 500000
         self._branches = []
         self._sig_branches = []
@@ -234,10 +234,13 @@ class XGBoostHandler(object):
 
         print('XGB INFO: setting hyperparameters...')
         if fold == -1:
-            self.params = [{'eval_metric': ['auc', 'logloss']}]
+            self.params = [{'eval_metric': ['auc', 'logloss'], 'tree_method': 'hist', 'device': 'cuda'}]
             fold = 0
         for key in params:
             self.params[fold][key] = params[key]
+        # Ensure GPU parameters are set for XGBoost 3.x
+        self.params[fold]['tree_method'] = 'hist'
+        self.params[fold]['device'] = 'cuda'
 
     def set_early_stopping_rounds(self, rounds):
         self.early_stopping_rounds = rounds
@@ -742,13 +745,20 @@ class XGBoostHandler(object):
         def objective(trial):
             # Suggest hyperparameters
             param = {
-                'max_depth': trial.suggest_int('max_depth', 3, 10),
-                'max_leaves': trial.suggest_int('max_leaves', 15, 255),
-                'eta': trial.suggest_float('eta', 0.02, 0.3, log=True),
+                'max_depth': trial.suggest_int('max_depth', 1, 5),
+                'max_leaves': trial.suggest_int('max_leaves', 0, 2048),
+                'max_delta_step': trial.suggest_int('max_delta_step', 1, 20),
+                'min_child_weight': trial.suggest_float('min_child_weight', 0, 100),
+                'subsample': trial.suggest_float('subsample', 0, 1),
+                'colsample_bytree': trial.suggest_float('colsample_bytree', 0.5, 1.0),
+                'eta': trial.suggest_float('eta', 0.01, 0.1, log=True),
                 'gamma': trial.suggest_float('gamma', 0.1, 5.0, log=True),
-                'reg_alpha': trial.suggest_float('reg_alpha', 0.0, 1.0),
-                'reg_lambda': trial.suggest_float('reg_lambda', 0.0, 10.0),
-                'scale_pos_weight': trial.suggest_float('scale_pos_weight', 0.5, 2.0),
+                'reg_alpha': trial.suggest_float('reg_alpha', 0, 1.0),
+                'reg_lambda': trial.suggest_float('reg_lambda', 0.1, 100.0, log=True),
+                'scale_pos_weight': trial.suggest_float('scale_pos_weight', 0, 1),
+                # GPU-specific parameters for XGBoost 3.x
+                'tree_method': 'hist',
+                'device': 'cuda',
             }
             
             logger.info(f"Trial {trial.number}: Testing parameters: {param}")

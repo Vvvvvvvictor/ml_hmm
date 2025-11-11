@@ -1,0 +1,22 @@
+{
+    "sample_list": {
+        "data": ["m110To150_ggH"],
+        "GluGluHToMuMu_M125": ["m110To150_ggH"],
+        "VBFHToMuMu_M125": ["m110To150_ggH"],
+        "DY_105To160": ["m110To150_ggH"],
+        "TTTo2L2Nu": ["m110To150_ggH"],
+        "ST_tW_antitop": ["m110To150_ggH"],
+        "ST_tW_top": ["m110To150_ggH"],
+        "WWTo2L2Nu": ["m110To150_ggH"],
+        "WZTo2L2Q": ["m110To150_ggH"],
+        "WZTo3LNu": ["m110To150_ggH"],
+        "ZZTo2L2Nu": ["m110To150_ggH"],
+        "ZZTo2L2Q": ["m110To150_ggH"],
+        "ZZTo4L": ["m110To150_ggH"],
+        "EWK_LLJJ_M50": ["m110To150_ggH"],
+        "WWW": ["m110To150_ggH"],
+        "WWZ": ["m110To150_ggH"],
+        "WZZ": ["m110To150_ggH"],
+        "ZZZ": ["m110To150_ggH"]
+    }
+}

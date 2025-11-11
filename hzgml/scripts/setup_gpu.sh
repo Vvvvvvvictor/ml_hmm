@@ -1,9 +1,9 @@
 #!/bin/bash
 # import ROOT
 
-source /cvmfs/sft.cern.ch/lcg/views/LCG_104/x86_64-centos8-gcc11-opt/setup.sh
-source /cvmfs/sft.cern.ch/lcg/releases/LCG_104/ROOT/6.28.04/x86_64-centos8-gcc11-opt/bin/thisroot.sh
-source /eos/user/${USER::1}/$USER/hzgmlenv/bin/activate
+source /cvmfs/sft.cern.ch/lcg/views/LCG_108_cuda/x86_64-el9-gcc13-opt/setup.sh
+source /cvmfs/sft.cern.ch/lcg/releases/LCG_108/ROOT/6.36.02/x86_64-el9-gcc13-opt/bin/thisroot.sh
+source /eos/user/${USER::1}/$USER/ml-gpu-env/bin/activate
 
 export PATH="`pwd`:${PATH}"
 export PYTHONPATH="`pwd`:${PYTHONPATH}"
@@ -15,7 +15,7 @@ export PYTHONPATH="`pwd`/scripts:${PYTHONPATH}"
 export PATH="`pwd`/hzgml:$PATH"
 export PYTHONPATH="`pwd`/hzgml:$PYTHONPATH"
 
-export PYTHONPATH="/eos/user/${USER::1}/$USER/hzgmlenv/lib/python3.9/site-packages/:$PYTHONPATH"
+export PYTHONPATH="/eos/user/${USER::1}/$USER/ml-gpu-env/lib/python3.12/site-packages/:$PYTHONPATH"
 
 # source /cvmfs/sft.cern.ch/lcg/views/LCG_108_cuda/x86_64-el9-gcc13-opt/setup.sh
 # sourcre /cvmfs/sft.cern.ch/lcg/releases/LCG_108/ROOT/6.36.02/x86_64-el9-gcc13-opt/bin/thisroot.sh

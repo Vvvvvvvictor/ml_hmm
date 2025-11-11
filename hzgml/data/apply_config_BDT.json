@@ -3,5 +3,6 @@
  "zero_to_one_jet": {"#+preselections": ["njets <= 1"], "models": {"zero_to_one_jet": "bdt_score"}},
  "zero_jet": {"#+preselections": ["njets == 0"], "models": {"zero_jet": "bdt_score"}},
  "one_jet":  {"#+preselections": ["njets == 1"], "models": {"one_jet": "bdt_score"}},
- "two_jet":  {"#+preselections": ["njets >= 2"], "models": {"two_jet": "bdt_score"}}
+ "two_jet":  {"#+preselections": ["njets >= 2"], "models": {"two_jet": "bdt_score"}},
+ "ggH": {"+preselections": ["trg_single_mu24 == 1"], "models": {"ggH": "bdt_score"}}
 }

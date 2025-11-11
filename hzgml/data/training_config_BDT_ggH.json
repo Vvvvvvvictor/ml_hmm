@@ -35,27 +35,27 @@
 				   "n_jets", "mass_jj", "H_zeppenfeld",
                            "pt_balance", "pt_balance_0j", "pt_balance_1j", "photon_zeppenfeld"
 				   ],
-              "params": [{"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"}
+              "params": [{"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "booster": "gbtree"}
                          ]
               },
  "zero_to_one_jet": {"#+preselections": ["n_jets <= 1"],
               "inputTree": "zero_to_one_jet",
-              "params": [{"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"}
+              "params": [{"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "booster": "gbtree"}
                          ]
               },
  "zero_jet": {"#+preselections": ["n_jets == 0"],
               "inputTree": "zero_jet",
               "+train_variables": [],
-              "params": [{"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"}
+              "params": [{"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"}
                          ]
               },
  "one_jet":  {"#+preselections": ["n_jets == 1"],
@@ -63,10 +63,10 @@
               "+train_variables": [
                                     "jet_1_pt", "jet1G_deltaR", "gamma_ptRelErr"
                                    ],
-              "params": [{"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"}
+              "params": [{"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy":  "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"}
                          ]
               },
  "two_jet":  {"+train_signal": [],
@@ -83,10 +83,10 @@
                   "jet2_pt", "jet2_eta", "jet2_phi",
                   "SoftActivityJetNjets5", "min_delta_eta_dimu_jets"
                                    ],
-              "params": [{"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"}
+              "params": [{"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy":  "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"}
                          ]
               },
  "VBF":      {"train_signal": ["VBF"],
@@ -101,10 +101,10 @@
                                   "jet_1_pt", "jet1G_deltaR", "jet_1_btagDeepFlavB",
                                   "jet_2_pt", "jet2G_deltaR", "jet_2_btagDeepFlavB"
                                    ],
-              "params": [{"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",   "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"},
-                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic", "tree_method": "hist", "booster": "gbtree"}
+              "params": [{"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",   "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"},
+                         {"silent": 1, "eval_metric": ["logloss", "auc"], "grow_policy": "lossguide", "nthread": 4, "objective": "binary:logistic",  "booster": "gbtree"}
                          ]
               },
  "ggH":  {"train_signal": ["GluGluHToMuMu_M125","VBFHToMuMu_M125"],
@@ -112,7 +112,7 @@
               "preselections": ["diMufsr_rc_mass >= 115", "diMufsr_rc_mass <= 135", "trg_single_mu24 == 1"],
               "inputTree": "m110To150_ggH",
               "randomIndex": "event", 
-              "weight": "1oDiMuResolution",
+              "weight": "eventWeight",
               "train_variables": [
                   "diMufsr_rc_pt", "diMufsr_rc_eta",
                   "mu1_fromH_eta","mu2_fromH_eta",
@@ -131,62 +131,77 @@
                            {
                              "verbosity": 1,
                              "eval_metric": ["logloss", "auc"],
-                             "grow_policy": "lossguide",
                              "nthread": 4,
                              "objective": "binary:logistic",
-                             "tree_method": "hist",
+                             "grow_policy": "lossguide",
                              "booster": "gbtree",
-                             "num_boost_round": 1000,
-                             "min_child_weight": 0.03,
+                             "min_child_weight": 1,
                              "eta": 0.10,
-                             "subsample": 0.5,
-                             "max_depth": 4,
-                             "colsample_bytree": 1.0
+                             "subsample": 0.8,
+                             "max_depth": 3,
+                             "colsample_bytree": 0.7,
+                             "max_delta_step": 10,
+                             "gamma": 3.224,
+                             "reg_alpha": 0.842,
+                             "reg_lambda": 2.465,
+                             "scale_pos_weight": 0.762
                            },
                            {
                              "verbosity": 1,
                              "eval_metric": ["logloss", "auc"],
-                             "grow_policy": "lossguide",
                              "nthread": 4,
                              "objective": "binary:logistic",
-                             "tree_method": "hist",
+                             "grow_policy": "lossguide",
                              "booster": "gbtree",
-                             "num_boost_round": 1000,
-                             "min_child_weight": 0.03,
+                             "min_child_weight": 1,
                              "eta": 0.10,
-                             "subsample": 0.5,
-                             "max_depth": 4,
-                             "colsample_bytree": 1.0
+                             "subsample": 0.8,
+                             "max_depth": 3,
+                             "max_leaves": 31,
+                             "colsample_bytree": 0.7,
+                             "max_delta_step": 10,
+                             "gamma": 3.224,
+                             "reg_alpha": 0.842,
+                             "reg_lambda": 2.465,
+                             "scale_pos_weight": 0.762
                            },
                            {
                              "verbosity": 1,
                              "eval_metric": ["logloss", "auc"],
-                             "grow_policy": "lossguide",
                              "nthread": 4,
                              "objective": "binary:logistic",
-                             "tree_method": "hist",
+                             "grow_policy": "lossguide",
                              "booster": "gbtree",
-                             "num_boost_round": 1000,
-                             "min_child_weight": 0.03,
+                             "min_child_weight": 1,
                              "eta": 0.10,
-                             "subsample": 0.5,
-                             "max_depth": 4,
-                             "colsample_bytree": 1.0
+                             "subsample": 0.8,
+                             "max_depth": 3,
+                             "max_leaves": 31,
+                             "colsample_bytree": 0.7,
+                             "max_delta_step": 10,
+                             "gamma": 3.224,
+                             "reg_alpha": 0.842,
+                             "reg_lambda": 2.465,
+                             "scale_pos_weight": 0.762
                            },
                            {
                              "verbosity": 1,
                              "eval_metric": ["logloss", "auc"],
-                             "grow_policy": "lossguide",
                              "nthread": 4,
                              "objective": "binary:logistic",
-                             "tree_method": "hist",
+                             "grow_policy": "lossguide",
                              "booster": "gbtree",
-                             "num_boost_round": 1000,
-                             "min_child_weight": 0.03,
+                             "min_child_weight": 1,
                              "eta": 0.10,
-                             "subsample": 0.5,
-                             "max_depth": 4,
-                             "colsample_bytree": 1.0
+                             "subsample": 0.8,
+                             "max_depth": 3,
+                             "max_leaves": 31,
+                             "colsample_bytree": 0.7,
+                             "max_delta_step": 10,
+                             "gamma": 3.224,
+                             "reg_alpha": 0.842,
+                             "reg_lambda": 2.465,
+                             "scale_pos_weight": 0.762
                            }
                          ]
               }

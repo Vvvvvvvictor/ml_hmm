@@ -1,3 +1,8 @@
-hzgml/plots
-hzgml/outputs
-hzgml/models
+hzgml/plots*
+hzgml/outputs*
+hzgml/models*
+
+**/check_*
+*err
+*log
+*out
