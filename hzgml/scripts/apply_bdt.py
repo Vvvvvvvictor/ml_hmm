@@ -8,7 +8,8 @@ import pandas as pd
 import uproot
 # from root_pandas import *
 import pickle
-from sklearn.preprocessing import StandardScaler, QuantileTransformer
+from sklearn.preprocessing import StandardScaler
+from weighted_quantile_transformer import WeightedQuantileTransformer
 import xgboost as xgb
 from tqdm import tqdm
 import logging
@@ -67,15 +68,19 @@ def getArgs():
     #parser.add_argument('-c', '--config', action='store', nargs=2, default=['data/training_config_BDT.json', 'data/apply_config_BDT.json'], help='Region to process')
     parser.add_argument('-c', '--config', action='store', nargs=2, default=['data/training_config_BDT_Hmm_RunIII.json', 'data/apply_config_BDT.json'], help='Region to process')
     parser.add_argument('-i', '--inputFolder', action='store', default='/eos/user/q/qguo/vbfhmm/ml/2018/skimmed_ntuples_v4/', help='directory of training inputs')
+    parser.add_argument('-t', '--inputTree', action='store', default='two_jet', help='input tree name')
     parser.add_argument('-m', '--modelFolder', action='store', default='models', help='directory of BDT models')
     parser.add_argument('-o', '--outputFolder', action='store', default='outputs', help='directory for outputs')
-    parser.add_argument('-r', '--region', action='store', choices=['two_jet', 'one_jet', 'zero_jet', 'zero_to_one_jet', 'VH_ttH', 'all_jet', "ggH"], default='two_jet', help='Region to process')
+    parser.add_argument('-r', '--region', action='store', choices=['two_jet', 'one_jet', 'zero_jet', 'zero_to_one_jet', 'VH_ttH', 'all_jet', "ggH", "ggH_sep"], default='two_jet', help='Region to process')
     parser.add_argument('-cat', '--category', action='store', nargs='+', help='apply only for specific categories')
 
     parser.add_argument('-s', '--shield', action='store', type=int, default=-1, help='Which variables needs to be shielded')
     parser.add_argument('-a', '--add', action='store', type=int, default=-1, help='Which variables needs to be added')
     parser.add_argument('-F', '--FixSBH125', action='store_true', default=False, help='Fix the H mass to be 125GeV to get the scores')
     parser.add_argument('-y', '--year', action='store', default='', help='directory name')
+    
+    # [GPU Update] Added GPU argument
+    parser.add_argument('-g', '--gpu', action='store_true', default=True, help='Use GPU for XGBoost inference')
 
     return parser.parse_args()
 
@@ -93,12 +98,16 @@ class ApplyXGBHandler(object):
         self._add = args.add
         self._FixSBH125 = args.FixSBH125
         self._year = args.year
+        self._use_gpu = args.gpu  # [GPU Update] Store GPU flag
 
         self._region = region
         self._inputFolder = ''
         # self._inputTree = region if region else 'inclusive'
-        self._inputTree = "m110To150_ggH"
+        self._inputTree = args.inputTree
         print("inputTree: ", self._inputTree)
+        if self._use_gpu:
+            print("XGB INFO: GPU Acceleration Enabled for Inference")
+            
         #self._inputTree = 'two_jet'
         self._modelFolder = ''
         self._outputFolder = ''
@@ -247,6 +256,19 @@ class ApplyXGBHandler(object):
                         bst.load_model(model_path_base + '.h5')
                     else:
                         raise FileNotFoundError(f"Model file not found: {model_path_base}.[json|ubj|h5]")
+                    
+                    # [GPU Update] Force model to use GPU predictor if enabled
+                    if self._use_gpu:
+                        try:
+                            # Try modern XGBoost (2.0+) syntax
+                            bst.set_param({"device": "cuda", "predictor": "gpu_predictor"})
+                        except:
+                            # Fallback for older XGBoost versions
+                            try:
+                                bst.set_param({"gpu_id": 0, "tree_method": "gpu_hist", "predictor": "gpu_predictor"})
+                            except Exception as e:
+                                print(f"XGB WARNING: Failed to set GPU parameters for model {model}_{i}: {e}")
+
                     self.m_models[model].append(bst)
                     del bst
 
@@ -317,59 +339,79 @@ class ApplyXGBHandler(object):
             
             # Process each chunk immediately without batching
             chunk_count = 0
-            for data in file[self._inputTree].iterate(library='pd', step_size=self._chunksize):
-                data = self.preselect(data)
-                
-                # Apply FixSBH125 if requested
-                if self._FixSBH125:
-                    mask = ((data['diMufsr_rc_mass'] > 110) & (data['diMufsr_rc_mass'] < 115)) | ((data['diMufsr_rc_mass'] > 135) & (data['diMufsr_rc_mass'] < 150))
-                    data.loc[mask, 'diMufsr_rc_mass'] = 125
-                
-                for i in range(4):
-                    data_s = data[(data[self.randomIndex]-shift)%314159%4 == i]
-                    if data_s.shape[0] == 0: continue
+            tree_with_name = [name.split(';')[0] for name in file.keys() if self._inputTree in name]
+            for name in tree_with_name:
+                if name != self._inputTree:
+                    print(f"XGB INFO: Skipping tree '{name}' (not matching '{self._inputTree}')")
+                    continue
+                # if self._inputTree not in name:
+                #     print(f"XGB INFO: Skipping tree '{name}' ('{self._inputTree}' not in)")
+                #     continue
+                for data in file[name].iterate(library='pd', step_size=self._chunksize):
+                    data = self.preselect(data)
                     
-                    data_o = data_s.copy()
+                    # Apply FixSBH125 if requested
+                    if self._FixSBH125:
+                        mask = ((data['diMufsr_rc_mass'] > 110) & (data['diMufsr_rc_mass'] < 115)) | ((data['diMufsr_rc_mass'] > 135) & (data['diMufsr_rc_mass'] < 150))
+                        data.loc[mask, 'diMufsr_rc_mass'] = 125
+                    
+                    for i in range(4):
+                        data_s = data[(data[self.randomIndex]-shift)%314159%4 == i]
+                        if data_s.shape[0] == 0: continue
+                        
+                        data_o = data_s.copy()
 
-                    for model in self.train_variables.keys():
-                        x_Events = data_s[self.train_variables[model]]
-                        dEvents = xgb.DMatrix(x_Events)
-                        scores = self.m_models[model][i].predict(dEvents)
-                        if len(scores) > 0:
-                            scores_t = self.m_tsfs[model][i].transform(scores.reshape(-1,1)).reshape(-1)
-                        else:
-                            scores_t = scores
+                        for model in self.train_variables.keys():
+                            x_Events = data_s[self.train_variables[model]]
+                            
+                            # [GPU Update] Pass nthread=-1 to let XGBoost handle concurrency, GPU context handles the rest
+                            # If using GPU, the Booster param 'predictor':'gpu_predictor' set in loadModels handles the switch
+                            dEvents = xgb.DMatrix(x_Events)
+                            
+                            scores = self.m_models[model][i].predict(dEvents)
+                            if len(scores) > 0:
+                                # Transformer usually runs on CPU (sklearn), so we don't change this
+                                scores_t = self.m_tsfs[model][i].transform(scores.reshape(-1,1)).reshape(-1)
+                            else:
+                                scores_t = scores
+                        
+                            xgb_basename = self.models[model]
+                            data_o[xgb_basename] = scores
+                            data_o[xgb_basename+'_t'] = scores_t
+                        
+                        # Save immediately to temp ROOT file
+                        if len(data_o) > 0:
+                            # Remove index column if it exists
+                            if "index" in data_o.columns:
+                                data_o = data_o.drop('index', axis=1)
+                            
+                            temp_file = tempfile.NamedTemporaryFile(suffix='.root', delete=False)
+                            temp_file.close()
+
+                            with uproot.recreate(temp_file.name) as root_file:
+                                # root_file[f"{name}_test"] = data_o
+                                root_file[f"test"] = data_o
+                            
+                            temp_files.append(temp_file.name)
+                        
+                        # Clear immediately
+                        del data_o
+                        chunk_count += 1
+                        
+                        # Force garbage collection more frequently
+                        if chunk_count % 4 == 0:
+                            gc.collect()
+                            if chunk_count % 20 == 0:
+                                current_memory = get_memory_usage()
+                                print(f"XGB INFO: Processed {chunk_count} chunks from file {file_idx+1}/{len(f_list)}, Memory: {current_memory:.2f} GB", end='\r', flush=True)
                     
-                        xgb_basename = self.models[model]
-                        data_o[xgb_basename] = scores
-                        data_o[xgb_basename+'_t'] = scores_t
-                    
-                    # Save immediately to temp file
-                    if len(data_o) > 0:
-                        if PYARROW_AVAILABLE:
-                            temp_file = tempfile.NamedTemporaryFile(suffix='.parquet', delete=False)
-                            data_o.to_parquet(temp_file.name, engine='pyarrow')
-                        else:
-                            temp_file = tempfile.NamedTemporaryFile(suffix='.pkl', delete=False)
-                            data_o.to_pickle(temp_file.name)
-                        temp_files.append(temp_file.name)
-                        temp_file.close()
-                    
-                    # Clear immediately
-                    del data_o
-                    chunk_count += 1
-                    
-                    # Force garbage collection more frequently
-                    if chunk_count % 4 == 0:
-                        gc.collect()
+                    # Clear chunk data
+                    del data, data_s
+                    gc.collect()
                 
-                # Clear chunk data
-                del data, data_s
-                gc.collect()
-            
             file.close()
             gc.collect()
-            
+                
             current_memory = get_memory_usage()
             print(f"XGB INFO: Processed file {file_idx+1}/{len(f_list)}, Memory: {current_memory:.2f} GB, Temp files: {len(temp_files)}")
         
@@ -388,77 +430,33 @@ class ApplyXGBHandler(object):
         print(f"XGB INFO: Final memory usage: {final_memory:.2f} GB")
         
     def _combine_temp_files(self, temp_files, output_path):
-        """Combine temporary files using ROOT hadd for optimal performance."""
+        """Combine temporary ROOT files using ROOT hadd for optimal performance."""
         if not temp_files:
             return
         
-        print(f"XGB INFO: Ultra-low memory combination of {len(temp_files)} files...")
+        print(f"XGB INFO: Combining {len(temp_files)} temporary ROOT files...")
         
-        # Convert temporary files to ROOT files
-        root_temp_files = []
-        total_rows = 0
-        
-        for i, temp_file in enumerate(temp_files):
-            try:
-                if PYARROW_AVAILABLE and temp_file.endswith('.parquet'):
-                    df = pd.read_parquet(temp_file, engine='pyarrow')
-                else:
-                    df = pd.read_pickle(temp_file)
-                
-                # Remove index column if it exists
-                if "index" in df.columns:
-                    df = df.drop('index', axis=1)
-                
-                # Create temporary ROOT file
-                import tempfile
-                root_temp = tempfile.NamedTemporaryFile(suffix='.root', delete=False)
-                root_temp.close()
-                
-                with uproot.recreate(root_temp.name) as root_file:
-                    root_file["test"] = df
-                
-                root_temp_files.append(root_temp.name)
-                total_rows += len(df)
-                del df
-                gc.collect()
-                
-                if (i + 1) % 50 == 0:  # Report every 50 files
-                    current_memory = get_memory_usage()
-                    print(f"XGB INFO: Converted {i+1}/{len(temp_files)} temp files to ROOT, Memory: {current_memory:.2f} GB")
-                    
-            except Exception as e:
-                print(f"XGB WARNING: Failed to process temp file {temp_file}: {e}")
-                continue
-        
-        # Use ROOT's hadd to combine all files
-        if root_temp_files:
-            if HADD_AVAILABLE:
-                print("XGB INFO: Using ROOT hadd to combine files...")
-                hadd_command = f"hadd -f {output_path} " + " ".join(root_temp_files)
-                
-                import subprocess
-                try:
-                    result = subprocess.run(hadd_command, shell=True, capture_output=True, text=True)
-                    if result.returncode == 0:
-                        print(f"XGB INFO: Successfully combined {total_rows} rows using hadd")
-                    else:
-                        print(f"XGB ERROR: hadd failed: {result.stderr}")
-                        # Fallback to manual combination
-                        self._fallback_combine_files(root_temp_files, output_path)
-                except Exception as e:
-                    print(f"XGB ERROR: Failed to run hadd: {e}")
-                    # Fallback to manual combination
-                    self._fallback_combine_files(root_temp_files, output_path)
-            else:
-                print("XGB WARNING: hadd not available, using manual combination...")
-                self._fallback_combine_files(root_temp_files, output_path)
+        # All files are already in ROOT format, just use hadd directly
+        if HADD_AVAILABLE:
+            print("XGB INFO: Using ROOT hadd to combine files...")
+            hadd_command = f"hadd -f {output_path} " + " ".join(temp_files)
             
-            # Clean up temporary ROOT files
-            for root_file in root_temp_files:
-                try:
-                    os.remove(root_file)
-                except:
-                    pass
+            import subprocess
+            try:
+                result = subprocess.run(hadd_command, shell=True, capture_output=True, text=True)
+                if result.returncode == 0:
+                    print(f"XGB INFO: Successfully combined {len(temp_files)} files using hadd")
+                else:
+                    print(f"XGB ERROR: hadd failed: {result.stderr}")
+                    # Fallback to manual combination
+                    self._fallback_combine_files(temp_files, output_path)
+            except Exception as e:
+                print(f"XGB ERROR: Failed to run hadd: {e}")
+                # Fallback to manual combination
+                self._fallback_combine_files(temp_files, output_path)
+        else:
+            print("XGB WARNING: hadd not available, using manual combination...")
+            self._fallback_combine_files(temp_files, output_path)
     
     def _fallback_combine_files(self, root_files, output_path):
         """Fallback method to combine ROOT files manually if hadd fails."""
@@ -519,4 +517,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

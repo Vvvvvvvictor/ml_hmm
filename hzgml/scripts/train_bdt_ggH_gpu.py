@@ -7,7 +7,8 @@ import pandas as pd
 import uproot
 import pickle
 from sklearn.metrics import roc_curve, auc, confusion_matrix, roc_auc_score
-from sklearn.preprocessing import StandardScaler, QuantileTransformer
+from sklearn.preprocessing import StandardScaler
+from weighted_quantile_transformer import WeightedQuantileTransformer
 import xgboost as xgb
 from tabulate import tabulate
 import matplotlib.pyplot as plt
@@ -33,7 +34,7 @@ def getArgs():
     parser.add_argument('-c', '--config', action='store', default='data/training_config_BDT_ggH.json', help='Region to process')
     parser.add_argument('-i', '--inputFolder', action='store', help='directory of training inputs')
     parser.add_argument('-o', '--outputFolder', action='store', help='directory for outputs')
-    parser.add_argument('-r', '--region', action='store', choices=['two_jet', 'one_jet', 'zero_jet', 'zero_to_one_jet', 'VH_ttH', 'VBF', 'all_jet', 'ggH'], default='two_jet', help='Region to process')
+    parser.add_argument('-r', '--region', action='store', choices=['two_jet', 'one_jet', 'zero_jet', 'zero_to_one_jet', 'VH_ttH', 'VBF', 'all_jet', 'ggH', 'VBFsep', 'ggH_sep'], default='two_jet', help='Region to process')
     parser.add_argument('-f', '--fold', action='store', type=int, nargs='+', choices=[0, 1, 2, 3], default=[0, 1, 2, 3], help='specify the fold for training')
     parser.add_argument('-p', '--params', action='store', type=dict, default=None, help='json string.') #type=json.loads
     parser.add_argument('--hyperparams_path', action='store', default=None, help='path of hyperparameters json') 
@@ -50,6 +51,8 @@ def getArgs():
     parser.add_argument('-s', '--shield', action='store', type=int, default=-1, help='Which variables needs to be shielded')
     parser.add_argument('-a', '--add', action='store', type=int, default=-1, help='Which variables needs to be added')
     parser.add_argument('--reweight', action='store_true', default=False, help='Apply reweighting to background to make diMufsr_rc_mass uniform')
+    parser.add_argument('--reso', action='store_true', default=False, help='Apply resolution weighting to signal')
+    parser.add_argument('--reso-bkg', action='store_true', default=False, help='Apply resolution weighting to background')
 
     return parser.parse_args()
 
@@ -82,12 +85,14 @@ class XGBoostHandler(object):
         self._shield = args.shield
         self._add = args.add
         self._reweight = args.reweight
+        self._reso = args.reso
+        self._reso_bkg = args.reso_bkg
 
         self._region = region
 
         self._inputFolder = ''
         self._outputFolder = args.outputFolder if args.outputFolder else 'models'
-        self._plotFolder = ('plots' + args.outputFolder.split("_")[-1]) if args.outputFolder else 'plots'
+        self._plotFolder = ('plots_' + args.outputFolder.split("_", 1)[1]) if args.outputFolder else 'plots'
         self._chunksize = 500000
         self._branches = []
         self._sig_branches = []
@@ -100,6 +105,10 @@ class XGBoostHandler(object):
         self.m_train_wt = {}
         self.m_val_wt = {}
         self.m_test_wt = {}
+        # Original weights (for transformScore)
+        self.m_train_wt_raw = {}
+        self.m_val_wt_raw = {}
+        self.m_test_wt_raw = {}
         self.m_y_train = {}
         self.m_y_val = {}
         self.m_y_test = {}
@@ -130,6 +139,7 @@ class XGBoostHandler(object):
         self.background_preselections = []
         #self.randomIndex = 'eventNumber'
         self.randomIndex = ''
+        self.reso = 'diMu-mass_resolution_abs'
         #self.weight = 'weight'
         self.weight = ''
         self.params = [{'eval_metric': ['auc', 'logloss']}]
@@ -189,15 +199,13 @@ class XGBoostHandler(object):
             print(len(self.train_variables))
             print("\n\n")
 
-            self._branches = list( set(self.train_variables) | set([p.split()[0].replace("(", "") for p in self.preselections]) | set([p.split()[0].replace("(", "") for p in self.background_preselections]) | set([self.randomIndex, self.weight]))
+            self._branches = list( set(self.train_variables) | set([p.split()[0].replace("(", "") for p in self.preselections]) | set([p.split()[0].replace("(", "") for p in self.background_preselections]) | set([self.randomIndex, self.weight, self.reso]))
 
-            self._mc_branches = list( set(self.train_variables) | set([p.split()[0].replace("(", "") for p in self.preselections]) | set([p.split()[0].replace("(", "") for p in self.mc_preselections]) | set([p.split()[0].replace("(", "") for p in self.signal_preselections]) | set([p.split()[0].replace("(", "") for p in self.background_preselections]) | set([self.randomIndex, self.weight]))
+            self._mc_branches = list( set(self.train_variables) | set([p.split()[0].replace("(", "") for p in self.preselections]) | set([p.split()[0].replace("(", "") for p in self.mc_preselections]) | set([p.split()[0].replace("(", "") for p in self.signal_preselections]) | set([p.split()[0].replace("(", "") for p in self.background_preselections]) | set([self.randomIndex, self.weight, self.reso]))
 
-            self._data_branches = list( set(self.train_variables) | set([p.split()[0].replace("(", "") for p in self.preselections]) | set([p.split()[0].replace("(", "") for p in self.data_preselections]) | set([p.split()[0].replace("(", "") for p in self.signal_preselections]) | set([p.split()[0].replace("(", "") for p in self.background_preselections]) | set([self.randomIndex, self.weight]))
+            self._data_branches = list( set(self.train_variables) | set([p.split()[0].replace("(", "") for p in self.preselections]) | set([p.split()[0].replace("(", "") for p in self.data_preselections]) | set([p.split()[0].replace("(", "") for p in self.signal_preselections]) | set([p.split()[0].replace("(", "") for p in self.background_preselections]) | set([self.randomIndex, self.weight, self.reso]))
 
-            self._sig_branches = list( set(self.train_variables) | set([p.split()[0].replace("(", "") for p in self.preselections]) | set([p.split()[0].replace("(", "") for p in self.mc_preselections]) | set([p.split()[0].replace("(", "") for p in self.signal_preselections]) | set([self.randomIndex, self.weight]))
-
-
+            self._sig_branches = list( set(self.train_variables) | set([p.split()[0].replace("(", "") for p in self.preselections]) | set([p.split()[0].replace("(", "") for p in self.mc_preselections]) | set([p.split()[0].replace("(", "") for p in self.signal_preselections]) | set([self.randomIndex, self.weight, self.reso]))
 
             self.train_variables = [x.replace('noexpand:', '') for x in self.train_variables]
             self.preselections = [x.replace('noexpand:', '') for x in self.preselections]
@@ -350,36 +358,66 @@ class XGBoostHandler(object):
         if not os.path.isdir(f"{self._plotFolder}/corr/"):
             os.makedirs(f"{self._plotFolder}/corr/")
         if data_type == "sig":
-            data = self.m_data_sig
+            data = self.m_data_sig.copy()
         else:
-            data = self.m_data_bkg
+            data = self.m_data_bkg.copy()
         columns = list(data.columns)
         for rem in ("is_vbfhmm", "weight", "event", "trg_single_mu24"):
             if rem in columns:
                 columns.remove(rem)
                 data = data.drop(rem, axis=1)
-        print(columns)
+        # print(columns)
+
+        columns = sorted(columns)
+        if 'diMufsr_rc_mass' in columns:
+            columns.remove('diMufsr_rc_mass')
+            columns.append('diMufsr_rc_mass')
+        data = data[columns]
+
+        # Replace values less than -900 with np.nan for correlation calculation
+        # This modification is local to the 'data' DataFrame in this function
+        for col_name in data.columns:
+            # Ensure the column is numeric before attempting comparison and assignment
+            if pd.api.types.is_numeric_dtype(data[col_name]):
+                # Use .loc for safe assignment to avoid SettingWithCopyWarning
+                data.loc[data[col_name] < -90, col_name] = np.nan
 
         data = data.corr() * 100
+        # data = data.dropna(axis=0, how='all').dropna(axis=1, how='all')
 
-        print(data)
+        # 将相关性矩阵转换为按相关性值排序的数据框
+        sorted_corr = data.unstack().sort_values(ascending=False)
 
+        # 选择相关性大于0.4的变量对
+        strong_corr = sorted_corr[(sorted_corr.abs() > 40) & (sorted_corr < 100)]
+        strong_corr = strong_corr[strong_corr.index.map(lambda x: x[0] < x[1])]
+        max_var_length = max([len(var) for var in columns])
+        # 输出结果
+        for (var1, var2), corr in strong_corr.items():
+            print(f"Correlation between {var1:<{max_var_length}} and {var2:<{max_var_length}} is {corr:.2f}")
+        # print(data)
+
+        lower_triangle = np.tril(data, -1)
+        mask = np.triu(np.ones_like(data, dtype=bool), k=0)
+        lower_triangle[mask] = np.nan
         plt.figure(figsize=(12, 9), dpi=300)
-        plt.imshow(data)
-        plt.colorbar()
-        for i in range(0, len(columns)):
-            line = list(data[columns[i]])
-            for j in range(0, len(line)):
-                #plt.text(i, j, int(line[j]), verticalalignment='center', horizontalalignment='center', fontsize=8)
-                if not np.isnan(line[j]):
-                    plt.text(i, j, int(line[j]), verticalalignment='center', horizontalalignment='center', fontsize=8)
-
-        plt.xticks(np.arange(0, len(columns)), columns, rotation=-90, fontsize=12)
-        plt.yticks(np.arange(0, len(columns)), columns, fontsize=12)
-        plt.title(self._region)
+        plt.imshow(lower_triangle, cmap='coolwarm')
+        cbar = plt.colorbar()
+        cbar.ax.tick_params(labelsize=16)
+        cbar.set_label('Correlation (%)', fontsize=16)
+        plt.clim(-100, 100)
+        for i in range(len(columns)):
+            for j in range(len(columns)):
+                if not np.isnan(lower_triangle[i, j]):
+                    plt.text(j, i, f"{lower_triangle[i, j]:3.0f}", ha="center", va="center", color="black", fontsize=12)
+        plt.xticks(np.arange(0, len(columns)), columns, rotation=-45, fontsize=16, ha="left")
+        plt.yticks(np.arange(0, len(columns)), columns, fontsize=16)
+        plt.gca().spines['top'].set_visible(False)
+        plt.gca().spines['right'].set_visible(False)
+        
+        # plt.title(self._region)
         plt.tight_layout()
         plt.savefig(f"{self._plotFolder}/corr/corr_%s_%s.pdf" % (self._region, data_type))
-        plt.savefig(f"{self._plotFolder}/corr/corr_%s_%s.png" % (self._region, data_type))
 
 
     def compute_reweight_factors(self, data, mass_var='diMufsr_rc_mass', weight_var=None, n_bins=50):
@@ -449,7 +487,7 @@ class XGBoostHandler(object):
         
         plt.tight_layout()
         plt.savefig(f"{self._plotFolder}/reweight/reweight_{mass_var}_fold{self._current_fold}.pdf")
-        plt.savefig(f"{self._plotFolder}/reweight/reweight_{mass_var}_fold{self._current_fold}.png")
+        # plt.savefig(f"{self._plotFolder}/reweight/reweight_{mass_var}_fold{self._current_fold}.png")
         plt.close()
         
         print(f'XGB INFO: Reweight factors computed. Min: {reweight_factors.min():.4f}, Max: {reweight_factors.max():.4f}, Mean: {reweight_factors.mean():.4f}')
@@ -495,6 +533,26 @@ class XGBoostHandler(object):
         print('XGB INFO: Setting the event weights...')
 
         if self.SF == -1: self.SF = 1.*train_sig.shape[0]/train_bkg.shape[0]
+        
+        # Store original raw weights before any modification
+        train_sig_wt_raw = train_sig[[self.weight]].values.flatten().copy()
+        train_bkg_wt_raw = train_bkg[[self.weight]].values.flatten().copy()
+        val_sig_wt_raw = val_sig[[self.weight]].values.flatten().copy()
+        val_bkg_wt_raw = val_bkg[[self.weight]].values.flatten().copy()
+        test_sig_wt_raw = test_sig[[self.weight]].values.flatten().copy()
+        test_bkg_wt_raw = test_bkg[[self.weight]].values.flatten().copy()
+
+        if self._reso:
+            print('XGB INFO: Applying resolution weighting to signal...')
+            train_sig[self.weight] = train_sig[[self.weight]].values.flatten() / np.round(train_sig[self.reso].values.flatten(), 2)
+            val_sig[self.weight] = val_sig[[self.weight]].values.flatten() / np.round(val_sig[self.reso].values.flatten(), 2)
+            test_sig[self.weight] = test_sig[[self.weight]].values.flatten() / np.round(test_sig[self.reso].values.flatten(), 2)
+
+        if self._reso_bkg:
+            print('XGB INFO: Applying resolution weighting to background...')
+            train_bkg[self.weight] = train_bkg[[self.weight]].values.flatten() / np.round(train_bkg[self.reso].values.flatten(), 2)
+            val_bkg[self.weight] = val_bkg[[self.weight]].values.flatten() / np.round(val_bkg[self.reso].values.flatten(), 2)
+            test_bkg[self.weight] = test_bkg[[self.weight]].values.flatten() / np.round(test_bkg[self.reso].values.flatten(), 2)
 
         # Apply reweight if requested
         if self._reweight:
@@ -502,9 +560,11 @@ class XGBoostHandler(object):
             print('XGB INFO: Computing reweight factors for background on diMufsr_rc_mass...')
             train_bkg_reweight = self.compute_reweight_factors(train_bkg, mass_var='diMufsr_rc_mass')
             val_bkg_reweight = self.compute_reweight_factors(val_bkg, mass_var='diMufsr_rc_mass')
+            test_bkg_reweight = self.compute_reweight_factors(test_bkg, mass_var='diMufsr_rc_mass')
         
             train_bkg[self.weight] = train_bkg[[self.weight]].values.flatten() * train_bkg_reweight
             val_bkg[self.weight] = val_bkg[[self.weight]].values.flatten() * val_bkg_reweight
+            test_bkg[self.weight] = test_bkg[[self.weight]].values.flatten() * test_bkg_reweight
 
         train_sig_wt = train_sig[[self.weight]] * ( train_sig.shape[0] + train_bkg.shape[0] ) * self.SF / ( train_sig[self.weight].mean() * (1.+self.SF) * train_sig.shape[0] )
         train_bkg_wt = train_bkg[[self.weight]] * ( train_sig.shape[0] + train_bkg.shape[0] ) * self.SF / ( train_bkg[self.weight].mean() * (1.+self.SF) * train_bkg.shape[0] )
@@ -519,6 +579,11 @@ class XGBoostHandler(object):
         self.m_val_wt[fold][self.m_val_wt[fold] < 0] = 0
         self.m_test_wt[fold] = pd.concat([test_sig_wt, test_bkg_wt]).to_numpy()
         self.m_test_wt[fold][self.m_test_wt[fold] < 0] = 0
+        
+        # Store original raw weights (for transformScore)
+        self.m_train_wt_raw[fold] = np.concatenate([train_sig_wt_raw, train_bkg_wt_raw])
+        self.m_val_wt_raw[fold] = np.concatenate([val_sig_wt_raw, val_bkg_wt_raw])
+        self.m_test_wt_raw[fold] = np.concatenate([test_sig_wt_raw, test_bkg_wt_raw])
 
         # setup the truth labels
         print('XGB INFO: Signal labeled as one; background labeled as zero.')
@@ -589,7 +654,7 @@ class XGBoostHandler(object):
             if not os.path.isdir(f'{self._plotFolder}/feature_importance'):
                 os.makedirs(f'{self._plotFolder}/feature_importance')
             # save figure
-            plt.savefig(f'{self._plotFolder}/feature_importance/%d_BDT_%s_%d.png' % (self._shield+1, self._region, fold))
+            # plt.savefig(f'{self._plotFolder}/feature_importance/%d_BDT_%s_%d.png' % (self._shield+1, self._region, fold))
             plt.savefig(f'{self._plotFolder}/feature_importance/%d_BDT_%s_%d.pdf' % (self._shield+1, self._region, fold))
 
         if show: plt.show()
@@ -634,7 +699,7 @@ class XGBoostHandler(object):
                 os.makedirs(f'{self._plotFolder}/roc_curve')
             # save figure
             plt.savefig(f'{self._plotFolder}/roc_curve/%d_BDT_%s_%d.pdf' % (self._shield+1, self._region, fold))
-            plt.savefig(f'{self._plotFolder}/roc_curve/%d_BDT_%s_%d.png' % (self._shield+1, self._region, fold))
+            # plt.savefig(f'{self._plotFolder}/roc_curve/%d_BDT_%s_%d.png' % (self._shield+1, self._region, fold))
 
         if show: plt.show()
 
@@ -660,11 +725,23 @@ class XGBoostHandler(object):
 
         print(f'XGB INFO: transforming scores based on {sample}')
         # transform the scores
-        self.m_tsf[fold] = QuantileTransformer(n_quantiles=1000, output_distribution='uniform', subsample=1000000000, random_state=0)
+        self.m_tsf[fold] = WeightedQuantileTransformer(n_quantiles=1000, output_distribution='uniform', subsample=1000000000, random_state=0)
         #plt.hist(score_test_sig, bins='auto')
         #plt.show()
-        if sample == 'sig': self.m_tsf[fold].fit(self.m_score_test_sig[fold].reshape(-1, 1))
-        elif sample == 'bkg': self.m_tsf[fold].fit(self.m_score_test_bkg[fold].reshape(-1, 1))
+        
+        # Use original raw weights for fitting
+        if sample == 'sig':
+            # Get signal mask from test set
+            sig_mask = self.m_y_test[fold] == 1
+            scores_sig = self.m_score_test[fold][sig_mask]
+            weights_sig = self.m_test_wt_raw[fold][sig_mask]
+            self.m_tsf[fold].fit(scores_sig.reshape(-1, 1), sample_weight=weights_sig)
+        elif sample == 'bkg':
+            # Get background mask from test set
+            bkg_mask = self.m_y_test[fold] == 0
+            scores_bkg = self.m_score_test[fold][bkg_mask]
+            weights_bkg = self.m_test_wt_raw[fold][bkg_mask]
+            self.m_tsf[fold].fit(scores_bkg.reshape(-1, 1), sample_weight=weights_bkg)
         #score_test_sig_t=tsf.transform(self.m_score_test_sig[fold].reshape(-1, 1)).reshape(-1)
         #plt.hist(score_test_sig_t, bins='auto')
         #plt.show()
@@ -745,10 +822,10 @@ class XGBoostHandler(object):
         def objective(trial):
             # Suggest hyperparameters
             param = {
-                'max_depth': trial.suggest_int('max_depth', 1, 5),
+                'max_depth': trial.suggest_int('max_depth', 1, 8),
                 'max_leaves': trial.suggest_int('max_leaves', 0, 2048),
                 'max_delta_step': trial.suggest_int('max_delta_step', 1, 20),
-                'min_child_weight': trial.suggest_float('min_child_weight', 0, 100),
+                'min_child_weight': trial.suggest_float('min_child_weight',1, 1000, log=True),
                 'subsample': trial.suggest_float('subsample', 0, 1),
                 'colsample_bytree': trial.suggest_float('colsample_bytree', 0.5, 1.0),
                 'eta': trial.suggest_float('eta', 0.01, 0.1, log=True),
@@ -756,6 +833,7 @@ class XGBoostHandler(object):
                 'reg_alpha': trial.suggest_float('reg_alpha', 0, 1.0),
                 'reg_lambda': trial.suggest_float('reg_lambda', 0.1, 100.0, log=True),
                 'scale_pos_weight': trial.suggest_float('scale_pos_weight', 0, 1),
+                'num_parallel_tree': trial.suggest_int('num_parallel_tree', 1, 10),
                 # GPU-specific parameters for XGBoost 3.x
                 'tree_method': 'hist',
                 'device': 'cuda',

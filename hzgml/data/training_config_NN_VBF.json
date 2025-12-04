@@ -1,0 +1,127 @@
+{
+  "common": {
+    "train_signal": ["VBFHToMuMu_M125"],
+    "train_mc_background": ["DY_105To160", "TTTo2L2Nu"],
+    "train_variables": [
+      "diMufsr_rc_mass", 
+      "diMu-mass_resolution_abs", 
+      "diMu-mass_resolution",
+      "dijet_mass", 
+      "log_dijet_mass",
+      "z_star", 
+      "R_pT",
+      "delta_eta_jj",
+      "SoftActivityJetNjets5", 
+      "min_delta_eta_dimu_jets",
+      "diMufsr_rc_pt", 
+      "diMufsr_rc_eta", 
+      "log_diMufsr_rc_pt",
+      "jet1_pt", 
+      "jet1_eta", 
+      "jet1_phi",
+      "jet2_pt", 
+      "jet2_eta", 
+      "jet2_phi"
+    ],
+    "preselections": ["diMufsr_rc_mass >= 110", "diMufsr_rc_mass <= 150"],
+    "signal_preselections": [],
+    "background_preselections": [],
+    "randomIndex": "event",
+    "weight": "eventWeight"
+  },
+  "VBF": {
+    "train_signal": ["VBFHToMuMu_M125", "GluGluHToMuMu_M125"],
+    "train_mc_background": [
+      "DY_105To160",
+      "EWK_LLJJ_M50",
+      "TTTo2L2Nu",
+      "ST_tW_antitop",
+      "ST_tW_top",
+      "WWTo2L2N",
+      "WZTo2L2Q",
+      "WZTo3LNu",
+      "ZZTo2L2Nu",
+      "ZZTo2L2Q",
+      "ZZTo4L"
+    ],
+    "vbfz_mc_background": [
+      "EWK_LLJJ_M50"
+    ],
+    "dy_mc_background": [
+      "DY_105To160"
+    ],
+    "train_variables": [
+      "diMufsr_rc_mass", 
+      "diMu-mass_resolution_abs", 
+      "diMu-mass_resolution",
+      "dijet_mass", 
+      "log_dijet_mass",
+      "z_star", 
+      "R_pT",
+      "delta_eta_jj",
+      "SoftActivityJetNjets5", 
+      "min_delta_eta_dimu_jets",
+      "diMufsr_rc_pt", 
+      "diMufsr_rc_eta", 
+      "log_diMufsr_rc_pt",
+      "jet1_pt", 
+      "jet1_eta", 
+      "jet1_phi",
+      "jet2_pt", 
+      "jet2_eta", 
+      "jet2_phi"
+    ],
+    "preselections": ["diMufsr_rc_mass >= 110", "diMufsr_rc_mass <= 150"],
+    "description": "VBF H->mumu DNN with hierarchical structure. First 3 variables are mass-related, rest are topology."
+  },
+  "VBF_simplified": {
+    "train_signal": ["VBFHToMuMu_M125"],
+    "train_mc_background": ["DY_105To160", "TTTo2L2Nu"],
+    "train_variables": [
+      "diMufsr_rc_mass", 
+      "diMu-mass_resolution_abs", 
+      "diMu-mass_resolution",
+      "dijet_mass", 
+      "log_dijet_mass",
+      "z_star", 
+      "R_pT",
+      "delta_eta_jj",
+      "SoftActivityJetNjets5", 
+      "min_delta_eta_dimu_jets",
+      "diMufsr_rc_pt", 
+      "diMufsr_rc_eta", 
+      "log_diMufsr_rc_pt",
+      "jet1_pt", 
+      "jet1_eta", 
+      "jet1_phi",
+      "jet2_pt", 
+      "jet2_eta", 
+      "jet2_phi"
+    ],
+    "preselections": ["diMufsr_rc_mass >= 110", "diMufsr_rc_mass <= 150"],
+    "description": "Simplified VBF configuration with fewer backgrounds for faster training"
+  },
+  "notes": {
+      "params": {
+        "dense_units_1": 64,
+        "dense_units_2": 32,
+        "dense_units_3": 16,
+        "dropout_rate": 0.2,
+        "learning_rate": 0.001,
+        "merged_dense_1": 64,
+        "merged_dense_2": 32,
+        "merged_dense_3": 16
+      },
+    "model_structure": "Hierarchical DNN with 4 sub-models merged into final classifier",
+    "mass_variables": "First 3 variables (diMufsr_rc_mass, diMu-mass_resolution_abs, diMu-mass_resolution)",
+    "topology_variables": "Remaining 16 variables (kinematics, jet properties, etc.)",
+    "sub_models": [
+      "model_vbf_z: Signal vs VBF Z (mass + topology)",
+      "model_dy: Signal vs DY (mass + topology)",
+      "model_no_mass: Signal vs Background (topology only)",
+      "model_mass_only: Signal vs Background (mass only)"
+    ],
+    "training": "Sub-models pre-trained for 10 epochs, then merged model trained with early stopping",
+    "optimization": "Optuna can optimize: dense units, dropout rate, learning rate, merged layer sizes"
+  }
+}

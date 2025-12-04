@@ -1,0 +1,151 @@
+{
+  "common": {
+    "train_vbf_signal": ["VBFHToMuMu_M125"],
+    "train_ggf_signal": ["GluGluHToMuMu_M125"],
+    "train_mc_background": ["DY_105To160", "TTTo2L2Nu"],
+    "train_variables": [
+      "diMufsr_rc_mass", 
+      "diMu-mass_resolution_abs", 
+      "diMu-mass_resolution",
+      "dijet_mass", 
+      "log_dijet_mass",
+      "z_star", 
+      "R_pT",
+      "delta_eta_jj",
+      "SoftActivityJetNjets5", 
+      "min_delta_eta_dimu_jets",
+      "diMufsr_rc_pt", 
+      "diMufsr_rc_eta", 
+      "log_diMufsr_rc_pt",
+      "jet1_pt", 
+      "jet1_eta", 
+      "jet1_phi",
+      "jet2_pt", 
+      "jet2_eta", 
+      "jet2_phi"
+    ],
+    "preselections": ["diMufsr_rc_mass >= 110", "diMufsr_rc_mass <= 150"],
+    "signal_preselections": [],
+    "background_preselections": [],
+    "randomIndex": "event",
+    "weight": "eventWeight"
+  },
+  "VBF": {
+    "train_vbf_signal": ["VBFHToMuMu_M125"],
+    "train_ggf_signal": ["GluGluHToMuMu_M125"],
+    "train_mc_background": [
+      "DY_105To160",
+      "EWK_LLJJ_M50",
+      "TTTo2L2Nu",
+      "ST_tW_antitop",
+      "ST_tW_top",
+      "WWTo2L2N",
+      "WZTo2L2Q",
+      "WZTo3LNu",
+      "ZZTo2L2Nu",
+      "ZZTo2L2Q",
+      "ZZTo4L"
+    ],
+    "vbfz_mc_background": [
+      "EWK_LLJJ_M50"
+    ],
+    "dy_mc_background": [
+      "DY_105To160"
+    ],
+    "train_variables": [
+      "diMufsr_rc_mass", 
+      "diMu-mass_resolution_abs", 
+      "diMu-mass_resolution",
+      "dijet_mass", 
+      "log_dijet_mass",
+      "z_star", 
+      "R_pT",
+      "delta_eta_jj",
+      "SoftActivityJetNjets5", 
+      "min_delta_eta_dimu_jets",
+      "diMufsr_rc_pt", 
+      "diMufsr_rc_eta", 
+      "log_diMufsr_rc_pt",
+      "jet1_pt", 
+      "jet1_eta", 
+      "jet1_phi",
+      "jet2_pt", 
+      "jet2_eta", 
+      "jet2_phi"
+    ],
+    "preselections": ["diMufsr_rc_mass >= 110", "diMufsr_rc_mass <= 150"],
+    "description": "VBF H->mumu 3-class DNN: VBF signal, ggF signal, and background. First 3 variables are mass-related, rest are topology."
+  },
+  "VBF_simplified": {
+    "train_vbf_signal": ["VBFHToMuMu_M125"],
+    "train_ggf_signal": ["GluGluHToMuMu_M125"],
+    "train_mc_background": ["DY_105To160", "TTTo2L2Nu"],
+    "train_variables": [
+      "diMufsr_rc_mass", 
+      "diMu-mass_resolution_abs", 
+      "diMu-mass_resolution",
+      "dijet_mass", 
+      "log_dijet_mass",
+      "z_star", 
+      "R_pT",
+      "delta_eta_jj",
+      "SoftActivityJetNjets5", 
+      "min_delta_eta_dimu_jets",
+      "diMufsr_rc_pt", 
+      "diMufsr_rc_eta", 
+      "log_diMufsr_rc_pt",
+      "jet1_pt", 
+      "jet1_eta", 
+      "jet1_phi",
+      "jet2_pt", 
+      "jet2_eta", 
+      "jet2_phi"
+    ],
+    "preselections": ["diMufsr_rc_mass >= 110", "diMufsr_rc_mass <= 150"],
+    "description": "Simplified 3-class configuration with fewer backgrounds for faster training"
+  },
+  "notes": {
+    "model_type": "3-class classification",
+    "outputs": {
+      "output_0": "VBF signal probability",
+      "output_1": "ggF signal probability", 
+      "output_2": "Background probability"
+    },
+    "derived_scores": {
+      "vbf_score": "VBF - ggF (discriminates VBF from ggF)",
+      "bdt_score": "(VBF + ggF) - background (signal vs background)"
+    },
+    "default_params": {
+      "dense_units_1": 64,
+      "dense_units_2": 64,
+      "dense_units_3": 16,
+      "dropout_rate": 0.1,
+      "mass_dense_units_1": 16,
+      "mass_dense_units_2": 8,
+      "mass_dense_units_3": 2,
+      "mass_dropout_rate": 0.1,
+      "ggf_vbf_dense_units_1": 64,
+      "ggf_vbf_dense_units_2": 32,
+      "ggf_vbf_dense_units_3": 16,
+      "ggf_vbf_dropout_rate": 0.1,
+      "learning_rate": 0.001,
+      "merged_dense_1": 128,
+      "merged_dense_2": 16,
+      "merged_dense_3": 128,
+      "activation": "elu",
+      "batch_size": 8096
+    },
+    "model_structure": "Hierarchical DNN with 5 sub-models merged into final 3-class classifier",
+    "mass_variables": "First 3 variables (diMufsr_rc_mass, diMu-mass_resolution_abs, diMu-mass_resolution)",
+    "topology_variables": "Remaining 16 variables (kinematics, jet properties, etc.)",
+    "sub_models": [
+      "model_vbf_z: VBF signal vs VBF Z (mass + topology)",
+      "model_dy: VBF signal vs DY (mass + topology)",
+      "model_no_mass: Signal vs Background (topology only)",
+      "model_mass_only: Signal vs Background (mass only)",
+      "model_ggf_vbf: ggF vs VBF discrimination (all features with separate hyperparameters)"
+    ],
+    "training": "Sub-models can be pre-trained, then merged model trained with early stopping for 3-class classification",
+    "optimization": "Optuna can optimize: dense units, dropout rate, learning rate, merged layer sizes, and ggF-VBF submodel parameters"
+  }
+}

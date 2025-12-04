@@ -22,25 +22,25 @@ plt.style.use(hep.style.CMS)
 # ----- CONFIGURATION ----
 # ------------------------
 
-base_dir = "/eos/user/j/jiehan/root_mumu/outputs_ggH_oreso_both_24_bdt_1203/ggH"
+base_dir = "/eos/user/j/jiehan/HMuMuShare/outputs_ggH_2223_bdt_1201/ggH"
 sig_file   = f"{base_dir}/sig.root"
 bkg_file   = f"{base_dir}/bkg.root"
 data_file  = f"{base_dir}/data.root"
 
-sig_proc = ["GluGluHToMuMu_M125","VBFHToMuMu_M125"]
-bkg_proc = ["EWK_LLJJ_M105To160", "ST_tW_antitop", "TTTo2L2Nu", "WWTo2L2Nu", "WWZ", "WZTo3LNu", "ZZTo2L2Nu", "ZZTo4L", "DY_105To160", "ST_tW_top", "WWW", "WZTo2L2Q", "WZZ", "ZZTo2L2Q", "ZZZ"]
+sig_proc = ["GluGluHToMuMu_M125_ggHUnc","VBFHToMuMu_M125_ggHUnc"]
+bkg_proc = ["EWK_LLJJ_M50", "ST_tW_antitop", "TTTo2L2Nu", "WWTo2L2Nu", "WWZ", "WZTo3LNu", "ZZTo2L2Nu", "ZZTo4L", "DY_105To160_ZpT-reweighted", "ST_tW_top", "WWW", "WZTo2L2Q", "WZZ", "ZZTo2L2Q", "ZZZ"]
 
 print(f"[INFO] Merging signal files: hadd -f {sig_file} {' '.join([f'{base_dir}/{proc}.root' for proc in sig_proc])}")
 os.system(f"hadd -f {sig_file} {' '.join([f'{base_dir}/{proc}.root' for proc in sig_proc])}")
 print(f"[INFO] Merging background files: hadd -f {bkg_file} {' '.join([f'{base_dir}/{proc}.root' for proc in bkg_proc])}")
 os.system(f"hadd -f {bkg_file} {' '.join([f'{base_dir}/{proc}.root' for proc in bkg_proc])}")
 
-tree_name  = "test"
-score_var  = "bdt_score_t"
+tree_name  = "data_two_jet_m110To150_ggH_test"
+score_var  = "bdt_score"
 weight_var = "eventWeight"
 mass_var   = "diMufsr_rc_mass"
 
-year = "2024"
+year = "2023"
 
 num_thresholds = 200
 max_categories = 6

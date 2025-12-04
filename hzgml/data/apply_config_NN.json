@@ -1,7 +1,5 @@
 {"common":   {"observables": ["H_mass", "diMufsr_rc_mass", "event", "weight", "njets"], "preselections": ["diMufsr_rc_mass >= 110", "diMufsr_rc_mass <= 150"]},
- "VH_ttH": {"#+preselections": ["n_leptons >= 3"], "models": {"VH_ttH": "bdt_score"}},
- "zero_to_one_jet": {"#+preselections": ["njets <= 1"], "models": {"zero_to_one_jet": "bdt_score"}},
- "zero_jet": {"#+preselections": ["njets == 0"], "models": {"zero_jet": "bdt_score"}},
- "one_jet":  {"#+preselections": ["njets == 1"], "models": {"one_jet": "bdt_score"}},
- "two_jet":  {"#+preselections": ["njets >= 2"], "models": {"two_jet": "bdt_score"}}
+ "ggH": {"+preselections": ["GGH==1"], "models": {"ggH": "nn_score"}},
+ "VBF":  {"models": {"VBF": "bdt_score"}},
+ "VBFsep":  {"models": {"VBFsep": "vbf_score"}}
 }
