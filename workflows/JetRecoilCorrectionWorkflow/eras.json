@@ -1,0 +1,79 @@
+{
+  "2022": {
+    "lumi_pb": 7989.513665822,
+    "adapter": "native",
+    "production_fingerprint": "641e290e583fe6415f7bda278589601d6251786adb290eb46df2dac5fdf28045",
+    "inputs": {
+      "srsb": "/eos/home-j/jiehan/HMuMuShare/SRSB_2022",
+      "wcr": "/eos/home-j/jiehan/HMuMuShare/WCR_2022",
+      "zcr": "/eos/home-j/jiehan/HMuMuShare/ZCR_2022",
+      "zee": "/eos/home-j/jiehan/HMuMuShare/ZEE_2022"
+    }
+  },
+  "2022EE": {
+    "lumi_pb": 26674.924045014,
+    "adapter": "native",
+    "production_fingerprint": "641e290e583fe6415f7bda278589601d6251786adb290eb46df2dac5fdf28045",
+    "inputs": {
+      "srsb": "/eos/home-j/jiehan/HMuMuShare/SRSB_2022EE",
+      "wcr": "/eos/home-j/jiehan/HMuMuShare/WCR_2022EE",
+      "zcr": "/eos/home-j/jiehan/HMuMuShare/ZCR_2022EE",
+      "zee": "/eos/home-j/jiehan/HMuMuShare/ZEE_2022EE"
+    }
+  },
+  "2023": {
+    "lumi_pb": 17964.21799777,
+    "adapter": "native",
+    "production_fingerprint": "641e290e583fe6415f7bda278589601d6251786adb290eb46df2dac5fdf28045",
+    "inputs": {
+      "srsb": "/eos/home-j/jiehan/HMuMuShare/SRSB_2023",
+      "wcr": "/eos/home-j/jiehan/HMuMuShare/WCR_2023",
+      "zcr": "/eos/home-j/jiehan/HMuMuShare/ZCR_2023",
+      "zee": "/eos/home-j/jiehan/HMuMuShare/ZEE_2023"
+    }
+  },
+  "2023BPix": {
+    "lumi_pb": 9676.73796572,
+    "adapter": "native",
+    "production_fingerprint": "641e290e583fe6415f7bda278589601d6251786adb290eb46df2dac5fdf28045",
+    "inputs": {
+      "srsb": "/eos/home-j/jiehan/HMuMuShare/SRSB_2023BPix",
+      "wcr": "/eos/home-j/jiehan/HMuMuShare/WCR_2023BPix",
+      "zcr": "/eos/home-j/jiehan/HMuMuShare/ZCR_2023BPix",
+      "zee": "/eos/home-j/jiehan/HMuMuShare/ZEE_2023BPix"
+    }
+  },
+  "2024": {
+    "lumi_pb": 109815.61186278501,
+    "adapter": "sampled",
+    "production_fingerprint": "641e290e583fe6415f7bda278589601d6251786adb290eb46df2dac5fdf28045",
+    "inputs": {
+      "srsb": "/eos/home-j/jiehan/HMuMuShare/SRSB_2024",
+      "wcr": "/eos/home-j/jiehan/HMuMuShare/WCR_2024",
+      "zcr": "/eos/home-j/jiehan/HMuMuShare/ZCR_2024",
+      "zee": "/eos/home-j/jiehan/HMuMuShare/ZEE_2024"
+    }
+  },
+  "2025": {
+    "lumi_pb": 110374.681686981,
+    "adapter": "sampled",
+    "production_fingerprint": "641e290e583fe6415f7bda278589601d6251786adb290eb46df2dac5fdf28045",
+    "inputs": {
+      "srsb": "/eos/home-j/jiehan/HMuMuShare/SRSB_2025",
+      "wcr": "/eos/home-j/jiehan/HMuMuShare/WCR_2025",
+      "zcr": "/eos/home-j/jiehan/HMuMuShare/ZCR_2025",
+      "zee": "/eos/home-j/jiehan/HMuMuShare/ZEE_2025"
+    }
+  },
+  "2026": {
+    "lumi_pb": 25148.977841014,
+    "adapter": "sampled",
+    "production_fingerprint": "641e290e583fe6415f7bda278589601d6251786adb290eb46df2dac5fdf28045",
+    "inputs": {
+      "srsb": "/eos/home-j/jiehan/HMuMuShare/SRSB_2026",
+      "wcr": "/eos/home-j/jiehan/HMuMuShare/WCR_2026",
+      "zcr": "/eos/home-j/jiehan/HMuMuShare/ZCR_2026",
+      "zee": "/eos/home-j/jiehan/HMuMuShare/ZEE_2026"
+    }
+  }
+}

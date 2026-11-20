@@ -1,0 +1,171 @@
+{
+  "region": "ggH",
+  "ptdecor": true,
+  "ptdecor_variables": [
+    "diMufsr_kit_BSC_pt",
+    "jet1_pt",
+    "jet2_pt",
+    "dijet_pt"
+  ],
+  "scaled_by_mass_variables": [
+    "diMufsr_kit_BSC_pt",
+    "jet1_pt",
+    "jet2_pt",
+    "dijet_pt"
+  ],
+  "mass_variable": "diMufsr_kit_BSC_mass",
+  "architecture": {
+    "trunk_units": [
+      2048,
+      512,
+      256,
+      128
+    ],
+    "trunk_dropout": [
+      0.05,
+      0.2,
+      0.1,
+      0.15
+    ],
+    "output_dense_units": 32,
+    "output_dense_units_ratio": 0.25,
+    "output_dropout": 0.2,
+    "output_units": [
+      32,
+      2
+    ],
+    "output_indices": {
+      "score": 0,
+      "domain": 1
+    },
+    "domain_layer": "closeness"
+  },
+  "domain_lambda": 10.0,
+  "domain_lambda_target": 10.0,
+  "domain_random_bce_target": 0.6931471805599453,
+  "domain_closeness_epsilon": 1e-07,
+  "score_reweight_use_transformer": true,
+  "score_reweight_transformer_warmup_epochs": 3,
+  "score_reweight_exponent": 3.0,
+  "score_reweight_reference_set": "train",
+  "score_reweight_reference_sample": "sig",
+  "score_reweight_n_quantiles": 1000,
+  "score_reweight_lut_size": 16384,
+  "score_reweight_fit_record": {
+    "score_reweight_transformer_enabled": true,
+    "score_reweight_transformer_fit_epoch": 3,
+    "score_reweight_reference_set": "train",
+    "score_reweight_reference_sample": "sig",
+    "score_reweight_reference_events": 1862779,
+    "score_reweight_reference_weight_sum": 34388.5062345411,
+    "score_reweight_reference_min": 0.00041205171146430075,
+    "score_reweight_reference_max": 1.0,
+    "score_reweight_lut_size": 16384
+  },
+  "asimov_loss_enabled": false,
+  "asimov_lambda": 0.05,
+  "asimov_tau": 0.02,
+  "asimov_quantiles": [
+    0.05,
+    0.4,
+    0.8
+  ],
+  "asimov_b_epsilon": 1e-06,
+  "asimov_plateau_threshold": 0.0002,
+  "asimov_plateau_patience": 5,
+  "asimov_mcstat_alpha": 0.5,
+  "asimov_activation": "val_score_loss_plateau",
+  "asimov_yield_weight_definition": "abs wt_raw for signal quantile boundaries; signed wt_raw for S and B; B_eff=max(B_signed, eps)+asimov_mcstat_alpha*sum(w_bkg_raw^2*category_weight^2)",
+  "mass_lambda": 2.0,
+  "mass_decorrelation_loss": "rff_hsic",
+  "mass_min_events": 128,
+  "mass_shape_warmup_epochs": 5,
+  "mass_shape_ramp_epochs": 10,
+  "mass_rff_num_features": 128,
+  "mass_decorrelation_score_sigmas": [
+    0.03,
+    0.06,
+    0.12
+  ],
+  "mass_decorrelation_mass_sigmas": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "mass_reweight_min": 110.0,
+  "mass_reweight_max": 150.0,
+  "mass_reweight_bin_width": 1.0,
+  "rff_auc_guard_enabled": true,
+  "rff_auc_guard_relative_threshold": 0.01,
+  "rff_auc_guard_check_every_epochs": 5,
+  "rff_auc_guard_max_retries": 1,
+  "rff_auc_guard_retry_seed_step": 100000,
+  "rff_auc_guard_final_check_enabled": true,
+  "mass_decorrelation_definition": "mass_loss is weighted multi-kernel RFF-HSIC between classifier score and true mass",
+  "mass_decorrelation_lambda": 2.0,
+  "mass_decorrelation_window": [
+    110.0,
+    150.0
+  ],
+  "mass_decorrelation_kernels": {
+    "score_sigmas": [
+      0.03,
+      0.06,
+      0.12
+    ],
+    "mass_sigmas": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "rff_num_features_per_kernel": 128
+  },
+  "mass_loss_definition": "total loss uses scheduled mass_lambda * mass_loss; mass_loss is val/train mass_hsic_loss",
+  "score_bin_mass_shape_epoch_definition": "validation background only; 10 weighted percentile bins by raw classifier score; mass in [110,150) with 1 GeV bins; weights are original eventWeight captured before score, mass, or resolution reweight",
+  "domain_lambda_schedule": "epoch1_0_epoch2to5_0p5_then_5x1mexpminus_epochminus5",
+  "domain_lambda_warmup_epochs": 1,
+  "early_stopping_metric": "val_total",
+  "fold": 3,
+  "train_variables": [
+    "diMufsr_kit_BSC_pt",
+    "diMufsr_kit_BSC_eta",
+    "mu1_fromH_eta",
+    "mu2_fromH_eta",
+    "phi_CS",
+    "cos_theta_CS",
+    "pTMu1oMmm",
+    "pTMu2oMmm",
+    "njets",
+    "z_star",
+    "R_pT",
+    "dijet_mass",
+    "dijet_pt",
+    "dijet_eta",
+    "delta_eta_jj",
+    "delta_phi_jj",
+    "jet1_pt",
+    "jet1_eta",
+    "jet2_pt",
+    "jet2_eta",
+    "min_delta_phi_dimu_jets",
+    "min_delta_eta_dimu_jets",
+    "source_year"
+  ],
+  "missing_jet_sentinel_max": -90.0,
+  "missing_jet_impute_definition": "training variables matching jet*, dijet*, z_star, or R_pT below missing_jet_sentinel_max are replaced by the fold training mean computed from finite non-sentinel score-train events before StandardScaler, so missing jets map to scaled value 0",
+  "missing_jet_impute_values": {
+    "R_pT": 0.20799835919383441,
+    "dijet_eta": 0.01115738317413537,
+    "dijet_mass": 185.7689693027255,
+    "dijet_pt": 0.6853900253734514,
+    "jet1_eta": 0.00940109852327002,
+    "jet1_pt": 0.5534858769828338,
+    "jet2_eta": 0.008824502187773395,
+    "jet2_pt": 0.3934719596043719,
+    "z_star": 2.276620613931746
+  },
+  "domain_reweight_definition": "domain sample weights multiplied by exp(score_reweight_exponent * classifier_score_t), where classifier_score_t is a fixed signal-uniform score after warmup; raw classifier_score is used before the transformer is ready",
+  "domain_bce_no_score_weight_definition": "domain label-balanced weighted BCE without classifier score reweighting; monitor only",
+  "domain_loss_definition": "score-reweighted label-balanced domain_bce - ln2; monitor only",
+  "domain_closeness_loss_definition": "sqrt((score-reweighted label-balanced domain_bce - ln2)^2 + epsilon^2), epsilon=1e-7; total_loss = score_bce + domain_lambda * domain_closeness_loss + regularization"
+}

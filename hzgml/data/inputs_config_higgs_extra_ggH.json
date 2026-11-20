@@ -1,0 +1,16 @@
+{
+  "sample_list": {
+    "ttHToMuMu_M125": [
+      "m110To150_ggH"
+    ],
+    "WplusHToMuMu_M125": [
+      "m110To150_ggH"
+    ],
+    "WminusHToMuMu_M125": [
+      "m110To150_ggH"
+    ],
+    "ZHToMuMu_M125": [
+      "m110To150_ggH"
+    ]
+  }
+}

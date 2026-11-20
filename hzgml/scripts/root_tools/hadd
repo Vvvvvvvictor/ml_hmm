@@ -1,0 +1,5 @@
+#!/bin/bash
+# Keep ROOT's libraries in this subprocess, separate from TensorFlow's runtime.
+set -eo pipefail
+source /cvmfs/sft.cern.ch/lcg/views/LCG_110/x86_64-el9-gcc15-opt/setup.sh
+exec /cvmfs/sft.cern.ch/lcg/views/LCG_110/x86_64-el9-gcc15-opt/bin/hadd "$@"

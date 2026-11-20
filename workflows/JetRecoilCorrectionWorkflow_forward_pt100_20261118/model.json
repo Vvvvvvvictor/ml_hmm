@@ -1,0 +1,255 @@
+{
+  "model": {
+    "jet_normalization_mode": "event_product",
+    "dy_sf_mode": "reco_ptll_njet",
+    "normalization_mode": "fixed_prefit_data_mc",
+    "partition": "all",
+    "apply_dy_sf_in_wcr": false,
+    "shared_jet_sf_across_eras": false,
+    "shared_dy_sf_across_eras": false,
+    "dy_pt_edges": [
+      0.0,
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0,
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0,
+      55.0,
+      60.0,
+      65.0,
+      70.0,
+      75.0,
+      80.0,
+      85.0,
+      90.0,
+      95.0,
+      100.0,
+      110.0,
+      120.0,
+      140.0,
+      160.0,
+      200.0,
+      "inf"
+    ],
+    "dy_njet_categories": 5,
+    "use_log_sf_parameters": true,
+    "minimum_effective_mc_statistics": 10,
+    "sparse_bin_strategy": "retain_and_report_exploratory",
+    "max_iterations": 300,
+    "jet_pt_edges": [
+      25.0,
+      30.0,
+      35.0,
+      40.0,
+      50.0,
+      70.0,
+      100.0,
+      "inf"
+    ],
+    "jet_eta_edges": [
+      -4.7,
+      -4.3,
+      -4.0,
+      -3.7,
+      -3.5,
+      -3.4,
+      -3.3,
+      -3.2,
+      -3.1,
+      -3.0,
+      -2.9,
+      -2.8,
+      -2.7,
+      -2.6,
+      -2.5,
+      -2.25,
+      -2.0,
+      -1.5,
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.25,
+      2.5,
+      2.6,
+      2.7,
+      2.8,
+      2.9,
+      3.0,
+      3.1,
+      3.2,
+      3.3,
+      3.4,
+      3.5,
+      3.7,
+      4.0,
+      4.3,
+      4.7
+    ],
+    "w_njet_edges": [
+      0,
+      2,
+      3,
+      4,
+      "inf"
+    ],
+    "w_njet_labels": [
+      "0\u20131",
+      "2",
+      "3",
+      "\u22654"
+    ],
+    "w_sf_applied_regions": [
+      "wcr"
+    ],
+    "w_sf_catalog_group": "W",
+    "shared_w_sf_across_eras": false,
+    "wcr_observation_blocks": [
+      "jet_pt_eta",
+      "reco_njet_01_2_3_4p",
+      "muon_pt",
+      "mumet_pt_njet"
+    ],
+    "wcr_covariance": "full_event_level_including_all_observation_cross_terms",
+    "muon_pt_edges": [
+      0.0,
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0,
+      60.0,
+      80.0,
+      120.0,
+      200.0,
+      "inf"
+    ],
+    "fit_regions": [
+      "zee",
+      "wcr"
+    ],
+    "w_sf_mode": "reco_njet_mumet_pt",
+    "w_mumet_pt_edges": [
+      0.0,
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      25.0,
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0,
+      55.0,
+      60.0,
+      65.0,
+      70.0,
+      75.0,
+      80.0,
+      85.0,
+      90.0,
+      95.0,
+      100.0,
+      110.0,
+      120.0,
+      140.0,
+      160.0,
+      200.0,
+      "inf"
+    ],
+    "w_sf_shape": [
+      26,
+      4
+    ],
+    "w_sf_index": "pt_bin * 4 + njet_bin",
+    "mumet_schema": 2,
+    "wcr_observation_slices": {
+      "jet_pt_eta": [
+        0,
+        1400
+      ],
+      "reco_njet": [
+        1400,
+        1404
+      ],
+      "muon_pt": [
+        1404,
+        1414
+      ],
+      "mumet_pt_njet": [
+        1414,
+        1518
+      ]
+    },
+    "wcr_recoil_groups": 5,
+    "recoil_grouping": {
+      "zcr": {
+        "pt_threshold": 20.0,
+        "axis": "dilepton"
+      },
+      "wcr": {
+        "pt_threshold": 40.0,
+        "axis": "muon"
+      },
+      "dphi_edges": [
+        0,
+        1.5,
+        2.5,
+        2.9,
+        3.141592653589793
+      ],
+      "zee": {
+        "pt_threshold": 20.0,
+        "axis": "dilepton"
+      }
+    },
+    "validation_regions": [
+      "zee",
+      "wcr",
+      "zcr",
+      "srsb"
+    ],
+    "dy_sf_applied_regions": [
+      "zee",
+      "zcr",
+      "srsb"
+    ],
+    "max_selected_jets": 32,
+    "jet_overflow_policy": "stable_corrected_pt_descending_take_first_32",
+    "jet_sf_region": {
+      "min_abs_eta_exclusive": 2.5,
+      "max_pt_exclusive_gev": 100.0,
+      "outside_sf": 1.0
+    }
+  },
+  "fit_priors": {
+    "jet_matched": {
+      "distribution": "gaussian",
+      "center": 1.0,
+      "sigma": 0.3
+    },
+    "jet_unmatched": {
+      "distribution": "gaussian",
+      "center": 1.0,
+      "sigma": 1.5
+    }
+  },
+  "initialization": "all log SF = 0",
+  "max_events": 0,
+  "reference": "/eos/user/j/jiehan/HMuMuShare/JetRecoilCorrection_2024/20261023_ngenjet10_mcstat_matched030_unmatched150_sf_prior_wsf_njet_mumetpt_zcr20_wcr_muon40_no_constraint",
+  "reference_changes": [
+    "fit ZEE instead of ZCR",
+    "current era inputs and luminosity",
+    "HE/HF-only jet SF below 100 GeV with restored jet pT binning",
+    "refreshed nohehf MC and published data including WCR EWK supplement"
+  ]
+}

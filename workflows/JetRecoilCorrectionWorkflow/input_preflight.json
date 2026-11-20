@@ -1,0 +1,3826 @@
+{
+  "passed": true,
+  "files": 382,
+  "records": [
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/data/part_0000.root",
+      "entries": 102023,
+      "smoke_entries": 256,
+      "smoke_selected": 98,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 2814,
+      "smoke_entries": 256,
+      "smoke_selected": 87,
+      "smoke_negative": 4
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "EWK_2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/EWK_2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 134970,
+      "smoke_entries": 256,
+      "smoke_selected": 100,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 34833,
+      "smoke_entries": 256,
+      "smoke_selected": 37,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 34362,
+      "smoke_entries": 256,
+      "smoke_selected": 49,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8.root",
+      "entries": 1070,
+      "smoke_entries": 256,
+      "smoke_selected": 108,
+      "smoke_negative": 4
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "DYto2Mu-2Jets_MLL-105To160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/DYto2Mu-2Jets_MLL-105To160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 1885036,
+      "smoke_entries": 256,
+      "smoke_selected": 113,
+      "smoke_negative": 20
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 296048,
+      "smoke_entries": 256,
+      "smoke_selected": 20,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 59903,
+      "smoke_entries": 256,
+      "smoke_selected": 117,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 6339,
+      "smoke_entries": 256,
+      "smoke_selected": 108,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 5568,
+      "smoke_entries": 256,
+      "smoke_selected": 87,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 1646,
+      "smoke_entries": 256,
+      "smoke_selected": 53,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 795,
+      "smoke_entries": 256,
+      "smoke_selected": 6,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 44102,
+      "smoke_entries": 256,
+      "smoke_selected": 50,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 36083,
+      "smoke_entries": 256,
+      "smoke_selected": 115,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "srsb",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 20107,
+      "smoke_entries": 256,
+      "smoke_selected": 85,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "wcr",
+      "sample": "DYto2L-2Jets-EWK_MLL-50_TuneCP5_13p6TeV_madgraph-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022/mc/DYto2L-2Jets-EWK_MLL-50_TuneCP5_13p6TeV_madgraph-pythia8.root",
+      "entries": 205759,
+      "smoke_entries": 256,
+      "smoke_selected": 227,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "wcr",
+      "sample": "DYto2L-2Jets_MLL-10to50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022/mc/DYto2L-2Jets_MLL-10to50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 43937,
+      "smoke_entries": 256,
+      "smoke_selected": 230,
+      "smoke_negative": 41
+    },
+    {
+      "era": "2022",
+      "region": "wcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022/data/part_0000.root",
+      "entries": 9381134,
+      "smoke_entries": 256,
+      "smoke_selected": 235,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "wcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 4308764,
+      "smoke_entries": 256,
+      "smoke_selected": 36,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "wcr",
+      "sample": "DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022/mc/DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 1197905,
+      "smoke_entries": 256,
+      "smoke_selected": 238,
+      "smoke_negative": 60
+    },
+    {
+      "era": "2022",
+      "region": "wcr",
+      "sample": "WtoLNu-2Jets-EWK_TuneCP5_13p6TeV_madgraph-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022/mc/WtoLNu-2Jets-EWK_TuneCP5_13p6TeV_madgraph-pythia8.root",
+      "entries": 1445810,
+      "smoke_entries": 256,
+      "smoke_selected": 232,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "wcr",
+      "sample": "WtoLNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022/mc/WtoLNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 2598067,
+      "smoke_entries": 256,
+      "smoke_selected": 245,
+      "smoke_negative": 50
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "EWK_2L2J_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/EWK_2L2J_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 184012,
+      "smoke_entries": 256,
+      "smoke_selected": 223,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/data/part_0000.root",
+      "entries": 5401750,
+      "smoke_entries": 256,
+      "smoke_selected": 237,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 49138,
+      "smoke_entries": 256,
+      "smoke_selected": 82,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 49529,
+      "smoke_entries": 256,
+      "smoke_selected": 93,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 450698,
+      "smoke_entries": 256,
+      "smoke_selected": 43,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 10947573,
+      "smoke_entries": 256,
+      "smoke_selected": 244,
+      "smoke_negative": 40
+    },
+    {
+      "era": "2022",
+      "region": "wcr",
+      "sample": "TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022/mc/TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 9436956,
+      "smoke_entries": 256,
+      "smoke_selected": 37,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8.root",
+      "entries": 1529,
+      "smoke_entries": 256,
+      "smoke_selected": 202,
+      "smoke_negative": 9
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 63213,
+      "smoke_entries": 256,
+      "smoke_selected": 157,
+      "smoke_negative": 7
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 102901,
+      "smoke_entries": 256,
+      "smoke_selected": 242,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 32047,
+      "smoke_entries": 256,
+      "smoke_selected": 171,
+      "smoke_negative": 4
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 109401,
+      "smoke_entries": 256,
+      "smoke_selected": 173,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 97004,
+      "smoke_entries": 256,
+      "smoke_selected": 148,
+      "smoke_negative": 10
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 272231,
+      "smoke_entries": 256,
+      "smoke_selected": 225,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1635548,
+      "smoke_entries": 256,
+      "smoke_selected": 245,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 897244,
+      "smoke_entries": 256,
+      "smoke_selected": 196,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 12086,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 62863,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/data/part_0000.root",
+      "entries": 3471435,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zcr",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 986991,
+      "smoke_entries": 256,
+      "smoke_selected": 163,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "EWK_2L2J_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/EWK_2L2J_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 124304,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 12187,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 6740472,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 43
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 16557,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 16
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8.root",
+      "entries": 955,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 9
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 67172,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 45266,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 13
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 177255,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 31051,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 17
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 54626,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1124702,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 511171,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/data/part_0000.root",
+      "entries": 363808,
+      "smoke_entries": 256,
+      "smoke_selected": 96,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "EWK_2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/EWK_2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 380215,
+      "smoke_entries": 256,
+      "smoke_selected": 99,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022",
+      "region": "zee",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 431036,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "DYto2Mu-2Jets_MLL-105To160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/DYto2Mu-2Jets_MLL-105To160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 6415074,
+      "smoke_entries": 256,
+      "smoke_selected": 126,
+      "smoke_negative": 22
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 118952,
+      "smoke_entries": 256,
+      "smoke_selected": 46,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 117863,
+      "smoke_entries": 256,
+      "smoke_selected": 39,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8.root",
+      "entries": 3353,
+      "smoke_entries": 256,
+      "smoke_selected": 92,
+      "smoke_negative": 2
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1039881,
+      "smoke_entries": 256,
+      "smoke_selected": 26,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 8007,
+      "smoke_entries": 256,
+      "smoke_selected": 89,
+      "smoke_negative": 4
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 200373,
+      "smoke_entries": 256,
+      "smoke_selected": 116,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 3991,
+      "smoke_entries": 256,
+      "smoke_selected": 64,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 2443,
+      "smoke_entries": 256,
+      "smoke_selected": 14,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 22048,
+      "smoke_entries": 256,
+      "smoke_selected": 115,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 19458,
+      "smoke_entries": 256,
+      "smoke_selected": 82,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 109495,
+      "smoke_entries": 256,
+      "smoke_selected": 116,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 69498,
+      "smoke_entries": 256,
+      "smoke_selected": 96,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "srsb",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2022EE/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 160123,
+      "smoke_entries": 256,
+      "smoke_selected": 42,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "wcr",
+      "sample": "DYto2L-2Jets-EWK_MLL-50_TuneCP5_13p6TeV_madgraph-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022EE/mc/DYto2L-2Jets-EWK_MLL-50_TuneCP5_13p6TeV_madgraph-pythia8.root",
+      "entries": 611938,
+      "smoke_entries": 256,
+      "smoke_selected": 242,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "wcr",
+      "sample": "DYto2L-2Jets_MLL-10to50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022EE/mc/DYto2L-2Jets_MLL-10to50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 148406,
+      "smoke_entries": 256,
+      "smoke_selected": 232,
+      "smoke_negative": 48
+    },
+    {
+      "era": "2022EE",
+      "region": "wcr",
+      "sample": "DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022EE/mc/DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 4214928,
+      "smoke_entries": 256,
+      "smoke_selected": 234,
+      "smoke_negative": 51
+    },
+    {
+      "era": "2022EE",
+      "region": "wcr",
+      "sample": "WtoLNu-2Jets-EWK_TuneCP5_13p6TeV_madgraph-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022EE/mc/WtoLNu-2Jets-EWK_TuneCP5_13p6TeV_madgraph-pythia8.root",
+      "entries": 4318484,
+      "smoke_entries": 256,
+      "smoke_selected": 243,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "wcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022EE/data/part_0000.root",
+      "entries": 33094311,
+      "smoke_entries": 256,
+      "smoke_selected": 230,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "wcr",
+      "sample": "WtoLNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022EE/mc/WtoLNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 8529117,
+      "smoke_entries": 256,
+      "smoke_selected": 247,
+      "smoke_negative": 48
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "EWK_2L2J_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/EWK_2L2J_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 596258,
+      "smoke_entries": 256,
+      "smoke_selected": 217,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "wcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022EE/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 18961824,
+      "smoke_entries": 256,
+      "smoke_selected": 35,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/data/part_0000.root",
+      "entries": 19133051,
+      "smoke_entries": 256,
+      "smoke_selected": 240,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1578285,
+      "smoke_entries": 256,
+      "smoke_selected": 58,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 168009,
+      "smoke_entries": 256,
+      "smoke_selected": 94,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 169390,
+      "smoke_entries": 256,
+      "smoke_selected": 92,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8.root",
+      "entries": 5075,
+      "smoke_entries": 256,
+      "smoke_selected": 205,
+      "smoke_negative": 14
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 92668,
+      "smoke_entries": 256,
+      "smoke_selected": 165,
+      "smoke_negative": 14
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 343336,
+      "smoke_entries": 256,
+      "smoke_selected": 248,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "wcr",
+      "sample": "TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2022EE/mc/TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 39827973,
+      "smoke_entries": 256,
+      "smoke_selected": 46,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 950388,
+      "smoke_entries": 256,
+      "smoke_selected": 220,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 283157,
+      "smoke_entries": 256,
+      "smoke_selected": 162,
+      "smoke_negative": 8
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 384885,
+      "smoke_entries": 256,
+      "smoke_selected": 183,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 166967,
+      "smoke_entries": 256,
+      "smoke_selected": 162,
+      "smoke_negative": 10
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 4925492,
+      "smoke_entries": 256,
+      "smoke_selected": 242,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 39020634,
+      "smoke_entries": 256,
+      "smoke_selected": 240,
+      "smoke_negative": 31
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 3062399,
+      "smoke_entries": 256,
+      "smoke_selected": 195,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zcr",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2022EE/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 3553564,
+      "smoke_entries": 256,
+      "smoke_selected": 181,
+      "smoke_negative": 2
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "EWK_2L2J_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/EWK_2L2J_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 394637,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/data/part_0000.root",
+      "entries": 10495606,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 232799,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 41830,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8.root",
+      "entries": 2966,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 8
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 42019,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 46695,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 11
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 606956,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 218680,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 132696,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 17
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 81437,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 23
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 23463276,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 40
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 189076,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/data/part_0000.root",
+      "entries": 250341,
+      "smoke_entries": 256,
+      "smoke_selected": 104,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1719451,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1518502,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2022EE",
+      "region": "zee",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2022EE/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 3302673,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 69389,
+      "smoke_entries": 256,
+      "smoke_selected": 47,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "EWK_2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/EWK_2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 98107,
+      "smoke_entries": 256,
+      "smoke_selected": 118,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 594747,
+      "smoke_entries": 256,
+      "smoke_selected": 38,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "DYto2Mu-2Jets_MLL-105To160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/DYto2Mu-2Jets_MLL-105To160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 4561403,
+      "smoke_entries": 256,
+      "smoke_selected": 113,
+      "smoke_negative": 19
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 68334,
+      "smoke_entries": 256,
+      "smoke_selected": 47,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8.root",
+      "entries": 2184,
+      "smoke_entries": 256,
+      "smoke_selected": 98,
+      "smoke_negative": 2
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 5216,
+      "smoke_entries": 256,
+      "smoke_selected": 74,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 12431,
+      "smoke_entries": 256,
+      "smoke_selected": 102,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 2717,
+      "smoke_entries": 256,
+      "smoke_selected": 52,
+      "smoke_negative": 2
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 117416,
+      "smoke_entries": 256,
+      "smoke_selected": 125,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 1483,
+      "smoke_entries": 256,
+      "smoke_selected": 13,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 41705,
+      "smoke_entries": 256,
+      "smoke_selected": 102,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 64264,
+      "smoke_entries": 256,
+      "smoke_selected": 119,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 40051,
+      "smoke_entries": 256,
+      "smoke_selected": 100,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2023",
+      "region": "srsb",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 91388,
+      "smoke_entries": 256,
+      "smoke_selected": 51,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "wcr",
+      "sample": "DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2023/mc/DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 2438098,
+      "smoke_entries": 256,
+      "smoke_selected": 242,
+      "smoke_negative": 54
+    },
+    {
+      "era": "2023",
+      "region": "wcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2023/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 9627350,
+      "smoke_entries": 256,
+      "smoke_selected": 29,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "wcr",
+      "sample": "WtoLNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2023/mc/WtoLNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 5550878,
+      "smoke_entries": 256,
+      "smoke_selected": 244,
+      "smoke_negative": 52
+    },
+    {
+      "era": "2023",
+      "region": "wcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2023/data/part_0000.root",
+      "entries": 25154088,
+      "smoke_entries": 256,
+      "smoke_selected": 234,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 905476,
+      "smoke_entries": 256,
+      "smoke_selected": 51,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/data/part_0000.root",
+      "entries": 13247236,
+      "smoke_entries": 256,
+      "smoke_selected": 242,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 99572,
+      "smoke_entries": 256,
+      "smoke_selected": 97,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 98611,
+      "smoke_entries": 256,
+      "smoke_selected": 79,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8.root",
+      "entries": 3190,
+      "smoke_entries": 256,
+      "smoke_selected": 202,
+      "smoke_negative": 7
+    },
+    {
+      "era": "2023",
+      "region": "wcr",
+      "sample": "TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2023/mc/TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 21372419,
+      "smoke_entries": 256,
+      "smoke_selected": 44,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 114209,
+      "smoke_entries": 256,
+      "smoke_selected": 157,
+      "smoke_negative": 6
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 59360,
+      "smoke_entries": 256,
+      "smoke_selected": 147,
+      "smoke_negative": 7
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 23261976,
+      "smoke_entries": 256,
+      "smoke_selected": 244,
+      "smoke_negative": 36
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 199661,
+      "smoke_entries": 256,
+      "smoke_selected": 236,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 820667,
+      "smoke_entries": 256,
+      "smoke_selected": 163,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 176466,
+      "smoke_entries": 256,
+      "smoke_selected": 140,
+      "smoke_negative": 5
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 532211,
+      "smoke_entries": 256,
+      "smoke_selected": 219,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 22975,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/data/part_0000.root",
+      "entries": 7327437,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 2881708,
+      "smoke_entries": 256,
+      "smoke_selected": 236,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1774390,
+      "smoke_entries": 256,
+      "smoke_selected": 195,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 22414,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zcr",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 2028603,
+      "smoke_entries": 256,
+      "smoke_selected": 171,
+      "smoke_negative": 2
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 119079,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8.root",
+      "entries": 1848,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 9
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 122943,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 51758,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 16
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 13499348,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 48
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 28306,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 8
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 322531,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1861960,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 380823,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 949960,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 77383,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 13
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/data/part_0000.root",
+      "entries": 135379,
+      "smoke_entries": 256,
+      "smoke_selected": 99,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 34407,
+      "smoke_entries": 256,
+      "smoke_selected": 37,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "EWK_2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/EWK_2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 65665,
+      "smoke_entries": 256,
+      "smoke_selected": 107,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023",
+      "region": "zee",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 828732,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "DYto2Mu-2Jets_MLL-105To160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/DYto2Mu-2Jets_MLL-105To160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 2316763,
+      "smoke_entries": 256,
+      "smoke_selected": 117,
+      "smoke_negative": 23
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 303725,
+      "smoke_entries": 256,
+      "smoke_selected": 26,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 34281,
+      "smoke_entries": 256,
+      "smoke_selected": 39,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8.root",
+      "entries": 1057,
+      "smoke_entries": 256,
+      "smoke_selected": 102,
+      "smoke_negative": 5
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 2632,
+      "smoke_entries": 256,
+      "smoke_selected": 93,
+      "smoke_negative": 2
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 58167,
+      "smoke_entries": 256,
+      "smoke_selected": 119,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 785,
+      "smoke_entries": 256,
+      "smoke_selected": 8,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 1366,
+      "smoke_entries": 256,
+      "smoke_selected": 46,
+      "smoke_negative": 3
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 20314,
+      "smoke_entries": 256,
+      "smoke_selected": 81,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 6291,
+      "smoke_entries": 256,
+      "smoke_selected": 113,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 31801,
+      "smoke_entries": 256,
+      "smoke_selected": 106,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 20282,
+      "smoke_entries": 256,
+      "smoke_selected": 93,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "srsb",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2023BPix/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 44530,
+      "smoke_entries": 256,
+      "smoke_selected": 46,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "wcr",
+      "sample": "DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2023BPix/mc/DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 1150372,
+      "smoke_entries": 256,
+      "smoke_selected": 243,
+      "smoke_negative": 62
+    },
+    {
+      "era": "2023BPix",
+      "region": "wcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2023BPix/data/part_0000.root",
+      "entries": 13761691,
+      "smoke_entries": 256,
+      "smoke_selected": 238,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "wcr",
+      "sample": "WtoLNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2023BPix/mc/WtoLNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 2732837,
+      "smoke_entries": 256,
+      "smoke_selected": 247,
+      "smoke_negative": 67
+    },
+    {
+      "era": "2023BPix",
+      "region": "wcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2023BPix/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 4936684,
+      "smoke_entries": 256,
+      "smoke_selected": 36,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2023BPix",
+      "region": "wcr",
+      "sample": "TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2023BPix/mc/TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 7835297,
+      "smoke_entries": 256,
+      "smoke_selected": 51,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/data/part_0000.root",
+      "entries": 7184548,
+      "smoke_entries": 256,
+      "smoke_selected": 237,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8.root",
+      "entries": 1572,
+      "smoke_entries": 256,
+      "smoke_selected": 209,
+      "smoke_negative": 11
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 463977,
+      "smoke_entries": 256,
+      "smoke_selected": 59,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 11017581,
+      "smoke_entries": 256,
+      "smoke_selected": 236,
+      "smoke_negative": 34
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 49099,
+      "smoke_entries": 256,
+      "smoke_selected": 83,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 28936,
+      "smoke_entries": 256,
+      "smoke_selected": 157,
+      "smoke_negative": 6
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 49197,
+      "smoke_entries": 256,
+      "smoke_selected": 92,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 98961,
+      "smoke_entries": 256,
+      "smoke_selected": 240,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 270763,
+      "smoke_entries": 256,
+      "smoke_selected": 213,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 407282,
+      "smoke_entries": 256,
+      "smoke_selected": 172,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 56436,
+      "smoke_entries": 256,
+      "smoke_selected": 160,
+      "smoke_negative": 4
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 87343,
+      "smoke_entries": 256,
+      "smoke_selected": 164,
+      "smoke_negative": 17
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1445420,
+      "smoke_entries": 256,
+      "smoke_selected": 234,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 889251,
+      "smoke_entries": 256,
+      "smoke_selected": 196,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2023BPix",
+      "region": "zcr",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2023BPix/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 992982,
+      "smoke_entries": 256,
+      "smoke_selected": 167,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 59073,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 11028,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 11312,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/data/part_0000.root",
+      "entries": 3865750,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/WWW_4F_TuneCP5_13p6TeV_amcatnlo-madspin-pythia8.root",
+      "entries": 922,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 5
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/DYto2L-2Jets_MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 6290617,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 29
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/WWZ_4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 13602,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 15
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 59515,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/WZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 25386,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 8
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 186697,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 161742,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/ZZZ_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 37604,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 12
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 919080,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 400370,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2023BPix",
+      "region": "zee",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2023BPix/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 467244,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/data/part_0000.root",
+      "entries": 1534040,
+      "smoke_entries": 256,
+      "smoke_selected": 114,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "EWK-2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/EWK-2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 1643651,
+      "smoke_entries": 256,
+      "smoke_selected": 107,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 4459,
+      "smoke_entries": 256,
+      "smoke_selected": 94,
+      "smoke_negative": 5
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 2599347,
+      "smoke_entries": 256,
+      "smoke_selected": 21,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 93495,
+      "smoke_entries": 256,
+      "smoke_selected": 36,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 93204,
+      "smoke_entries": 256,
+      "smoke_selected": 45,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 155457,
+      "smoke_entries": 256,
+      "smoke_selected": 119,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 10616,
+      "smoke_entries": 256,
+      "smoke_selected": 88,
+      "smoke_negative": 3
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 973072,
+      "smoke_entries": 256,
+      "smoke_selected": 109,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 5626,
+      "smoke_entries": 256,
+      "smoke_selected": 64,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 220038,
+      "smoke_entries": 256,
+      "smoke_selected": 96,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 3038,
+      "smoke_entries": 256,
+      "smoke_selected": 7,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "DYto2Mu-2Jets_Bin-MLL-105to160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/DYto2Mu-2Jets_Bin-MLL-105to160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 22480954,
+      "smoke_entries": 256,
+      "smoke_selected": 110,
+      "smoke_negative": 13
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 104386,
+      "smoke_entries": 256,
+      "smoke_selected": 108,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 182374,
+      "smoke_entries": 256,
+      "smoke_selected": 94,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "srsb",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2024/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 325776,
+      "smoke_entries": 256,
+      "smoke_selected": 51,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "wcr",
+      "sample": "DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2024/mc/DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 8641201,
+      "smoke_entries": 256,
+      "smoke_selected": 243,
+      "smoke_negative": 57
+    },
+    {
+      "era": "2024",
+      "region": "wcr",
+      "sample": "TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2024/mc/TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 17883405,
+      "smoke_entries": 256,
+      "smoke_selected": 39,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "wcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2024/data/part_0002.root",
+      "entries": 40871490,
+      "smoke_entries": 256,
+      "smoke_selected": 234,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "wcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2024/data/part_0000.root",
+      "entries": 61588395,
+      "smoke_entries": 256,
+      "smoke_selected": 231,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "wcr",
+      "sample": "WtoMuNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2024/mc/WtoMuNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 22371638,
+      "smoke_entries": 256,
+      "smoke_selected": 254,
+      "smoke_negative": 60
+    },
+    {
+      "era": "2024",
+      "region": "wcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2024/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 31305912,
+      "smoke_entries": 256,
+      "smoke_selected": 20,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "wcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2024/data/part_0001.root",
+      "entries": 61615608,
+      "smoke_entries": 256,
+      "smoke_selected": 228,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "EWK-2L2J_Bin-MLL-50-MJJ-120_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/EWK-2L2J_Bin-MLL-50-MJJ-120_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 1048845,
+      "smoke_entries": 256,
+      "smoke_selected": 234,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/data/part_0001.root",
+      "entries": 16727235,
+      "smoke_entries": 256,
+      "smoke_selected": 245,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 134151,
+      "smoke_entries": 256,
+      "smoke_selected": 75,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/data/part_0000.root",
+      "entries": 63721667,
+      "smoke_entries": 256,
+      "smoke_selected": 239,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 6399,
+      "smoke_entries": 256,
+      "smoke_selected": 209,
+      "smoke_negative": 5
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 134354,
+      "smoke_entries": 256,
+      "smoke_selected": 88,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 119163,
+      "smoke_entries": 256,
+      "smoke_selected": 180,
+      "smoke_negative": 16
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1669246,
+      "smoke_entries": 256,
+      "smoke_selected": 240,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 3971157,
+      "smoke_entries": 256,
+      "smoke_selected": 63,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 230898,
+      "smoke_entries": 256,
+      "smoke_selected": 182,
+      "smoke_negative": 8
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 355006,
+      "smoke_entries": 256,
+      "smoke_selected": 174,
+      "smoke_negative": 5
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 6745736,
+      "smoke_entries": 256,
+      "smoke_selected": 238,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 8209771,
+      "smoke_entries": 256,
+      "smoke_selected": 246,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 4388762,
+      "smoke_entries": 256,
+      "smoke_selected": 179,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 4597674,
+      "smoke_entries": 256,
+      "smoke_selected": 206,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "DYto2Tau-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/DYto2Tau-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 11193,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 42
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 7229727,
+      "smoke_entries": 256,
+      "smoke_selected": 175,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 579259,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 30152,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "EWK-2L2J_Bin-MLL-50-MJJ-120_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/EWK-2L2J_Bin-MLL-50-MJJ-120_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 692839,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zcr",
+      "sample": "DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2024/mc/DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 76652254,
+      "smoke_entries": 256,
+      "smoke_selected": 243,
+      "smoke_negative": 40
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 3845,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 12
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 62267,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 14
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 29885,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/data/part_0000.root",
+      "entries": 41183670,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 114607,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 8
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1039393,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 4333547,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "DYto2E-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/DYto2E-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 44791066,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 39
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 166431,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 11
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 2058159,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 2545430,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 5411685,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2024",
+      "region": "zee",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2024/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 2955888,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 4619,
+      "smoke_entries": 256,
+      "smoke_selected": 92,
+      "smoke_negative": 5
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 2613354,
+      "smoke_entries": 256,
+      "smoke_selected": 30,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 93953,
+      "smoke_entries": 256,
+      "smoke_selected": 46,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 93629,
+      "smoke_entries": 256,
+      "smoke_selected": 44,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "EWK-2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/EWK-2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 1652531,
+      "smoke_entries": 256,
+      "smoke_selected": 101,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 10637,
+      "smoke_entries": 256,
+      "smoke_selected": 84,
+      "smoke_negative": 5
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/data/part_0000.root",
+      "entries": 1571944,
+      "smoke_entries": 256,
+      "smoke_selected": 102,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "DYto2Mu-2Jets_Bin-MLL-105to160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/DYto2Mu-2Jets_Bin-MLL-105to160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 22608922,
+      "smoke_entries": 256,
+      "smoke_selected": 104,
+      "smoke_negative": 17
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 5725,
+      "smoke_entries": 256,
+      "smoke_selected": 70,
+      "smoke_negative": 5
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 977911,
+      "smoke_entries": 256,
+      "smoke_selected": 103,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 220615,
+      "smoke_entries": 256,
+      "smoke_selected": 91,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 156855,
+      "smoke_entries": 256,
+      "smoke_selected": 113,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 104761,
+      "smoke_entries": 256,
+      "smoke_selected": 90,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 183093,
+      "smoke_entries": 256,
+      "smoke_selected": 106,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 2899,
+      "smoke_entries": 256,
+      "smoke_selected": 14,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "srsb",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2025/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 327160,
+      "smoke_entries": 256,
+      "smoke_selected": 50,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "wcr",
+      "sample": "DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2025/mc/DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 8776627,
+      "smoke_entries": 256,
+      "smoke_selected": 234,
+      "smoke_negative": 55
+    },
+    {
+      "era": "2025",
+      "region": "wcr",
+      "sample": "TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2025/mc/TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 17639874,
+      "smoke_entries": 256,
+      "smoke_selected": 32,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "wcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2025/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 31048736,
+      "smoke_entries": 256,
+      "smoke_selected": 19,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "wcr",
+      "sample": "WtoMuNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2025/mc/WtoMuNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 22764453,
+      "smoke_entries": 256,
+      "smoke_selected": 249,
+      "smoke_negative": 46
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/data/part_0001.root",
+      "entries": 18848341,
+      "smoke_entries": 256,
+      "smoke_selected": 247,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "EWK-2L2J_Bin-MLL-50-MJJ-120_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/EWK-2L2J_Bin-MLL-50-MJJ-120_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 1055206,
+      "smoke_entries": 256,
+      "smoke_selected": 235,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "wcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2025/data/part_0001.root",
+      "entries": 61649252,
+      "smoke_entries": 256,
+      "smoke_selected": 233,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "wcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2025/data/part_0000.root",
+      "entries": 61443548,
+      "smoke_entries": 256,
+      "smoke_selected": 237,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "wcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2025/data/part_0002.root",
+      "entries": 59376239,
+      "smoke_entries": 256,
+      "smoke_selected": 241,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 3987846,
+      "smoke_entries": 256,
+      "smoke_selected": 47,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/data/part_0000.root",
+      "entries": 62705307,
+      "smoke_entries": 256,
+      "smoke_selected": 239,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 134833,
+      "smoke_entries": 256,
+      "smoke_selected": 86,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 135359,
+      "smoke_entries": 256,
+      "smoke_selected": 81,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 120591,
+      "smoke_entries": 256,
+      "smoke_selected": 192,
+      "smoke_negative": 8
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 6522,
+      "smoke_entries": 256,
+      "smoke_selected": 223,
+      "smoke_negative": 12
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 232109,
+      "smoke_entries": 256,
+      "smoke_selected": 183,
+      "smoke_negative": 7
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 357900,
+      "smoke_entries": 256,
+      "smoke_selected": 165,
+      "smoke_negative": 6
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1676768,
+      "smoke_entries": 256,
+      "smoke_selected": 246,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 4415118,
+      "smoke_entries": 256,
+      "smoke_selected": 180,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 6768209,
+      "smoke_entries": 256,
+      "smoke_selected": 240,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 4623683,
+      "smoke_entries": 256,
+      "smoke_selected": 215,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 8244433,
+      "smoke_entries": 256,
+      "smoke_selected": 243,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 7269639,
+      "smoke_entries": 256,
+      "smoke_selected": 187,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "EWK-2L2J_Bin-MLL-50-MJJ-120_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/EWK-2L2J_Bin-MLL-50-MJJ-120_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 694766,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "DYto2Tau-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/DYto2Tau-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 11338,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 46
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 31145,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 612603,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 30673,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/data/part_0000.root",
+      "entries": 19710283,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 3787,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 8
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 114731,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 12
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 62449,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 11
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1044386,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zcr",
+      "sample": "DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2025/mc/DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 77049789,
+      "smoke_entries": 256,
+      "smoke_selected": 241,
+      "smoke_negative": 40
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 169594,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 9
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 2064762,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 4351855,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/data/part_0000.root",
+      "entries": 175830,
+      "smoke_entries": 256,
+      "smoke_selected": 116,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "DYto2E-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/DYto2E-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 44982708,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 31
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 2563619,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 5434479,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2025",
+      "region": "zee",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2025/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 2955882,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "EWK-2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/EWK-2Mu2J_Bin-MLL-105to160_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 377676,
+      "smoke_entries": 256,
+      "smoke_selected": 109,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 21383,
+      "smoke_entries": 256,
+      "smoke_selected": 28,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 595711,
+      "smoke_entries": 256,
+      "smoke_selected": 27,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "DYto2Mu-2Jets_Bin-MLL-105to160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/DYto2Mu-2Jets_Bin-MLL-105to160_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 5149375,
+      "smoke_entries": 256,
+      "smoke_selected": 116,
+      "smoke_negative": 24
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 21278,
+      "smoke_entries": 256,
+      "smoke_selected": 48,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 1003,
+      "smoke_entries": 256,
+      "smoke_selected": 110,
+      "smoke_negative": 6
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 2366,
+      "smoke_entries": 256,
+      "smoke_selected": 93,
+      "smoke_negative": 2
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 222852,
+      "smoke_entries": 256,
+      "smoke_selected": 111,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 1338,
+      "smoke_entries": 256,
+      "smoke_selected": 78,
+      "smoke_negative": 2
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 35555,
+      "smoke_entries": 256,
+      "smoke_selected": 100,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 50627,
+      "smoke_entries": 256,
+      "smoke_selected": 87,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 729,
+      "smoke_entries": 256,
+      "smoke_selected": 13,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 23749,
+      "smoke_entries": 256,
+      "smoke_selected": 84,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 41929,
+      "smoke_entries": 256,
+      "smoke_selected": 112,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "srsb",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/SRSB_2026/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 74285,
+      "smoke_entries": 256,
+      "smoke_selected": 55,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "wcr",
+      "sample": "DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2026/mc/DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 2023331,
+      "smoke_entries": 256,
+      "smoke_selected": 245,
+      "smoke_negative": 58
+    },
+    {
+      "era": "2026",
+      "region": "wcr",
+      "sample": "TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2026/mc/TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 4016671,
+      "smoke_entries": 256,
+      "smoke_selected": 41,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "wcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2026/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 7077873,
+      "smoke_entries": 256,
+      "smoke_selected": 26,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "wcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2026/data/part_0000.root",
+      "entries": 27697622,
+      "smoke_entries": 256,
+      "smoke_selected": 228,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "EWK-2L2J_Bin-MLL-50-MJJ-120_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/EWK-2L2J_Bin-MLL-50-MJJ-120_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 239780,
+      "smoke_entries": 256,
+      "smoke_selected": 241,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/data/part_0000.root",
+      "entries": 9038171,
+      "smoke_entries": 256,
+      "smoke_selected": 244,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "wcr",
+      "sample": "WtoMuNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/WCR_2026/mc/WtoMuNu-2Jets_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 5251864,
+      "smoke_entries": 256,
+      "smoke_selected": 249,
+      "smoke_negative": 55
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 30732,
+      "smoke_entries": 256,
+      "smoke_selected": 91,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 30783,
+      "smoke_entries": 256,
+      "smoke_selected": 88,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 1581,
+      "smoke_entries": 256,
+      "smoke_selected": 204,
+      "smoke_negative": 7
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 27259,
+      "smoke_entries": 256,
+      "smoke_selected": 195,
+      "smoke_negative": 12
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 909242,
+      "smoke_entries": 256,
+      "smoke_selected": 61,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/DYto2Mu-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 17557954,
+      "smoke_entries": 256,
+      "smoke_selected": 244,
+      "smoke_negative": 34
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 382485,
+      "smoke_entries": 256,
+      "smoke_selected": 241,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 53065,
+      "smoke_entries": 256,
+      "smoke_selected": 182,
+      "smoke_negative": 10
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1051775,
+      "smoke_entries": 256,
+      "smoke_selected": 209,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 81464,
+      "smoke_entries": 256,
+      "smoke_selected": 173,
+      "smoke_negative": 7
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1544756,
+      "smoke_entries": 256,
+      "smoke_selected": 237,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1659045,
+      "smoke_entries": 256,
+      "smoke_selected": 162,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1006245,
+      "smoke_entries": 256,
+      "smoke_selected": 179,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zcr",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZCR_2026/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1878989,
+      "smoke_entries": 256,
+      "smoke_selected": 249,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "data",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/data/part_0000.root",
+      "entries": 2455687,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/TbarWplusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 6995,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/TWminusto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 6919,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "EWK-2L2J_Bin-MLL-50-MJJ-120_TuneCH3_13p6TeV_madgraph-herwig7",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/EWK-2L2J_Bin-MLL-50-MJJ-120_TuneCH3_13p6TeV_madgraph-herwig7.root",
+      "entries": 158000,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "DYto2Tau-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/DYto2Tau-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 2562,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 41
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/WWW-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 922,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 9
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/TTto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 139008,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/WWZ-4F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 14155,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 9
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/WWto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 238151,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "DYto2E-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/DYto2E-2Jets_Bin-MLL-50_TuneCP5_13p6TeV_amcatnloFXFX-pythia8.root",
+      "entries": 10250160,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 31
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/WZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 990930,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/WZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 26126,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 13
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/ZZZ-5F_TuneCP5_13p6TeV_amcatnlo-pythia8.root",
+      "entries": 38695,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 18
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/WZto3LNu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 470775,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "ZZto4L_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/ZZto4L_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 675112,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/ZZto2L2Q_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 585268,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 1
+    },
+    {
+      "era": "2026",
+      "region": "zee",
+      "sample": "ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8",
+      "path": "/eos/user/j/jiehan/HMuMuShare/ZEE_2026/mc/ZZto2L2Nu_TuneCP5_13p6TeV_powheg-pythia8.root",
+      "entries": 1235562,
+      "smoke_entries": 256,
+      "smoke_selected": 256,
+      "smoke_negative": 0
+    }
+  ]
+}
